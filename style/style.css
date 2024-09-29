@@ -499,14 +499,17 @@
   opacity: 0; /* Initially invisible */
   transform: translateX(-100%); /* Start off-screen to the left */
   transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition */
+  overflow: hidden; /* Prevent extra scroll if there's no content */
+  transform: translateX(-100%); /* Start off-screen */
+  min-height: 100vh; /* Ensure the section takes at least the full viewport height, but expands based on content */
+  overflow-y: auto; /* Allow vertical scrolling inside sections when content exceeds */
+  max-height: 100vh; /* Limit section height to the viewport height */
 }
 
 .section.active {
   opacity: 1; /* Make it visible */
   transform: translateX(0); /* Slide into view */
 }
-
-
 
 .service-description {
   max-height: 5em; /* Limit height to 5 lines */
@@ -517,7 +520,34 @@
 .service-description.expanded {
   max-height: 20em; /* Allow more lines when expanded */
 }
+#readmore .readmore__content {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-clamp: 4; /* Limit to 4 lines */
+  max-height: calc(1.5em * 4); /* Adjust max-height to match the number of visible lines */
+  transition: max-height 0.3s ease;
+  margin-bottom: 0; /* Remove any default margin below the text */
+}
 
+#readmore .readmore__content.expanded {
+  max-height: 100%; /* Expand to full height when active */
+}
+
+#readmore .read-more {
+  display: inline-block;
+  margin-top: 5px; /* Reduce the top margin to bring the button closer to the text */
+  color: #007BFF; /* Bootstrap primary color */
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#readmore .read-more:hover {
+  color: #007BFF; /* Bootstrap primary color */
+}
 .read-more {
   display: inline-block;
   margin-top: 0.5em;
