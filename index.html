@@ -38,14 +38,14 @@
     <div class="nav-toggler">
         <span></span>
     </div>
-    <ul class="nav" >
-        <li><a href="#home"class="active" ><i class="fa fa-home"></i>Home</a></li>
-        <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
-        <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
-        <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-        <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
-        <i id="close" class="fa fa-times" onclick="closemenu()"></i>
-    </ul>
+<ul class="nav">
+    <li><a href="#home" class="active" onclick="navigateToSection(event, 'home')"><i class="fa fa-home"></i>Home</a></li>
+    <li><a href="#about" onclick="navigateToSection(event, 'about')"><i class="fa fa-user"></i>About</a></li>
+    <li><a href="#services" onclick="navigateToSection(event, 'services')"><i class="fa fa-list"></i>Services</a></li>
+    <li><a href="#portfolio" onclick="navigateToSection(event, 'portfolio')"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+    <li><a href="#contact" onclick="navigateToSection(event, 'contact')"><i class="fa fa-comments"></i>Contact</a></li>
+    <i id="close" class="fa fa-times" onclick="closeMenu()" style="cursor: pointer; padding: 15px;"></i>
+</ul>
 </div>
 <!--aside end-->
 <!--main-content-start-->
@@ -60,11 +60,7 @@
                 <h3 class="my-profession">l'm a <span class="typing">Software developer</span></h3>
     <div id="readmore">
         <span class="readmore__content">
-            Welcome to my portfolio! My name is Dickson Tangaso, and I am a dedicated web developer with over three years of experience in PHP, HTML, and CSS. My passion for web development began during my college days, and I have since worked tirelessly to refine my skills and knowledge.
-            As a developer, I have a deep understanding of PHP, HTML, and CSS, and I am proficient in building responsive, user-friendly websites. I am also well-versed in various frameworks such as Laravel, CodeIgniter, and Bootstrap.
-            I have worked with clients from various industries and developed custom web solutions tailored to their specific needs. I have created e-commerce websites, company websites, and personal blogs, to mention a few. My goal is to help clients achieve their online goals by providing innovative and efficient web solutions.
-            As a web developer, I am always eager to learn and keep up-to-date with the latest web development trends and technologies. I am confident in my ability to tackle any web development project, and I strive to deliver high-quality work that meets and exceeds client expectations.
-            Thank you for taking the time to visit my portfolio. I am excited to discuss your next project and help bring your ideas to life.
+            Welcome to my portfolio! I'm Dickson Tangaso, a skilled web and Java developer with expertise in Spring Boot, Maven, Jasper Reports, Oracle SQL, and APIs. With over three years of experience, I specialize in creating responsive, user-friendly websites and custom web solutions. Proficient in PHP, HTML, CSS, and frameworks like Laravel and Bootstrap, I've developed e-commerce sites and business websites. I'm always eager to learn and keep up with the latest tech trends, ready to tackle any project with quality and innovation. Let's work together!
         </span>
         <button class="readmore__toggle" role="switch" aria-checked="true">
             Show more
@@ -74,7 +70,7 @@
     <a href="#contact" class="btn hire me">Hire me </a>
             </div>
             <div class="home-img padd-15">
-                <img src="imgs/ds.jpg" alt="">
+                <img src="imgs/dev.jpg" alt="">
             </div>
         </div>
     </div>
@@ -123,8 +119,8 @@
                         </div>
                         <div class="row">   
                             <div class="buttons padd-15">
-                                <a href="imgs/DICKSON CV Aug 2023.pdf"Download class="btn">Download CV</a>
-                                <a href="imgs/DICKSON CV APRIL 2023.pdf" class="btn">View CV</a>
+                                <a href="imgs/DICKSON CV 2024 updated.pdf"Download class="btn">Download CV</a>
+                                <a href="imgs/DICKSON CV 2024 updated.pdf" class="btn">View CV</a>
                                 <a href="#contact" class="btn hire-me">Hire me</a>
                             </div>
                         </div>
@@ -191,7 +187,15 @@
                                         </h3>
                                         <h4 class="timeline-title">Degree in computer science</h4>
                                         <p class="timeline-text">I acquired the Degree in Computer science from kisii universty class 2021</p>
-                                    </div>                                  
+                                    </div>   
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date">
+                                            <i class="fa fa-calendar"></i> 2017s
+                                        </h3>
+                                        <h4 class="timeline-title">Certificate in Computer Packages</h4>
+                                        <p class="timeline-text">I acquired a certificate in Computer computer packages from Kaagwa Training Collage, 2017</p>
+                                    </div>                                
                                       <!--Timeline item-->
                                     <div class="timeline-item">
                                         <div class="circle-dot"></div>
@@ -261,12 +265,7 @@
                                         <h4 class="timeline-title">Zalego Institute Of Technology</h4>
                                         <p>Web Designer</p>
                                     </div>                      
-                                     <!--Timeline item-->
-                                    <div class="timeline-item">
-                                        <div class="circle-dot"></div>
-                                        <h3 class="timeline-date">
-                                         <i class="fa fa-calendar"></i> Zalego Institute Of technology </h3>
-                                    </div>
+                                
                                 </div>
                             </div>
                         </div>  
@@ -278,107 +277,137 @@
 </section>
 <!--About-section-end-->
 <!--service-section-start-->
-<section class="service section " id="services">
+<section class="service section" id="services">
     <div class="container">
         <div class="row">
-            <div class="section-title ">
+            <div class="section-title">
                 <h2>Services</h2>
             </div>
         </div>
         <div class="row">
-            <!--==Service item end==-->
-             <!--==Service item start==-->
-             <div class="service-item padd-15">
+            <!-- Service item start -->
+            <div class="service-item padd-15">
                 <div class="service-item-inner">
                     <div class="icon">
-                        <i class="fa fa-file-code-o"></i>
+                        <i class="fa fa-cog"></i> <!-- Unique icon for Java Development -->
                     </div>
                     <h4>Java & Spring Boot Development</h4>
-                <p>As a Java developer, I have substantial experience in building scalable, robust applications using the Spring Boot framework. I specialize in creating RESTful APIs and microservices that integrate seamlessly with front-end applications and third-party services. My expertise in Java includes using the core language features and modern Java features like lambda expressions, streams, and functional programming.</p>              
-              </div>
+                    <p class="service-description">As a Java developer, I have substantial experience in building scalable, robust applications using the Spring Boot framework. I specialize in creating RESTful APIs and microservices that integrate seamlessly with front-end applications and third-party services. My expertise in Java includes using core language features and modern Java capabilities like lambda expressions, streams, and functional programming.</p>
+                    <a href="#" class="read-more" onclick="toggleReadMore(event, this)">Read More</a>
+                </div>
             </div>
+            <!-- Service item end -->
             <div class="service-item padd-15">
                 <div class="service-item-inner">
                     <div class="icon">
-                        <i class="fa fa-file-code-o"></i>
+                        <i class="fa fa-file-pdf-o"></i> <!-- Unique icon for JasperReports -->
                     </div>
-                    <h4>JasperReports generation</h4>
-                <p>I am highly proficient in generating complex reports using JasperReports, one of the most powerful reporting libraries available in the Java ecosystem. My experience includes designing both static and dynamic reports, handling various input data sources like Oracle SQL and MySQL databases, and creating visually appealing PDF, Excel, and HTML reports. These reports provide actionable insights, tailored to meet business needs, with dynamic data visualization.</p>         
-               </div>
+                    <h4>JasperReports Generation</h4>
+                    <p class="service-description">I am highly proficient in generating complex reports using JasperReports, one of the most powerful reporting libraries available in the Java ecosystem. My experience includes designing both static and dynamic reports, handling various input data sources like Oracle SQL and MySQL databases, and creating visually appealing PDF, Excel, and HTML reports that provide actionable insights tailored to business needs.</p>
+                    <a href="#" class="read-more" onclick="toggleReadMore(event, this)">Read More</a>
+                </div>
             </div>
+            <!-- Service item end -->
+
+            <!-- Service item start -->
             <div class="service-item padd-15">
                 <div class="service-item-inner">
                     <div class="icon">
-                        <i class="fa fa-file-code-o"></i>
+                        <i class="fa fa-plug"></i> <!-- Unique icon for API Development -->
                     </div>
                     <h4>API Development & Integration</h4>
-                <p>My expertise in API development is rooted in creating highly performant, scalable, and secure APIs that facilitate seamless communication between applications and external systems. I primarily use Spring Boot for building RESTful APIs that adhere to modern standards like OpenAPI and OAuth2. These APIs handle complex business logic and process large volumes of data while ensuring high availability</p>             </div>
+                    <p class="service-description">My expertise in API development focuses on creating highly performant, scalable, and secure APIs that facilitate seamless communication between applications and external systems. I primarily use Spring Boot for building RESTful APIs that adhere to modern standards like OpenAPI and OAuth2, managing complex business logic and processing large volumes of data efficiently.</p>
+                    <a href="#" class="read-more" onclick="toggleReadMore(event, this)">Read More</a>
+                </div>
             </div>
-             <div class="service-item padd-15">
-                <div class="service-item-inner">
-                    <div class="icon">
-                        <i class="fa fa-file-code-o"></i>
-                    </div>
-                    <h4>Oracle SQL & MySQL</h4>
-<p>I possess deep expertise in both Oracle SQL and MySQL databases, ensuring efficient data storage, retrieval, and manipulation. My experience includes creating, optimizing, and maintaining complex SQL queries, stored procedures, and database schemas tailored to meet the demands of high-volume enterprise applications. I am skilled in designing normalized databases and ensuring data integrity across various applications</p>                </div>
-            </div>
+            <!-- Service item end -->
+
+            <!-- Service item start -->
             <div class="service-item padd-15">
                 <div class="service-item-inner">
                     <div class="icon">
-                        <i class="fa fa-file-code-o"></i>
+                        <i class="fa fa-database"></i> <!-- Unique icon for Database Expertise -->
                     </div>
-                    <h4>Front-End Web Development (HTML, CSS, JavaScript)</h4>
-<p>As a web developer, I am proficient in building responsive and user-friendly websites using HTML, CSS, and JavaScript. I have experience in crafting clean and structured HTML for various web applications, ensuring that my code follows best practices for semantic markup. I am skilled in utilizing CSS for creating visually appealing layouts, using Flexbox, Grid, and media queries to build responsive designs that look great on any device.</p>                </div>
+                    <h4>Oracle SQL & MySQL</h4>
+                    <p class="service-description">I possess deep expertise in both Oracle SQL and MySQL databases, ensuring efficient data storage, retrieval, and manipulation. My experience includes creating, optimizing, and maintaining complex SQL queries, stored procedures, and database schemas tailored for high-volume enterprise applications.</p>
+                    <a href="#" class="read-more" onclick="toggleReadMore(event, this)">Read More</a>
+                </div>
             </div>
-            <!--==Service item end==-->
-             <!--==Service item start==-->
-             <div class="service-item padd-15">
+            <!-- Service item end -->
+
+            <!-- Service item start -->
+            <div class="service-item padd-15">
                 <div class="service-item-inner">
                     <div class="icon">
-                        <i class="fa fa-code"></i>
+                        <i class="fa fa-desktop"></i> <!-- Unique icon for Front-End Development -->
+                    </div>
+                    <h4>Front-End Web Development</h4>
+                    <p class="service-description">I am proficient in building responsive and user-friendly websites using HTML, CSS, and JavaScript. I follow best practices for semantic markup and utilize CSS to create visually appealing layouts with responsive designs that look great on any device.</p>
+                    <a href="#" class="read-more" onclick="toggleReadMore(event, this)">Read More</a>
+                </div>
+            </div>
+            <!-- Service item end -->
+
+            <!-- Service item start -->
+            <div class="service-item padd-15">
+                <div class="service-item-inner">
+                    <div class="icon">
+                        <i class="fa fa-server"></i> <!-- Unique icon for Back-End Development -->
                     </div>
                     <h4>Back-End Development & Integration with Java</h4>
-<p>In addition to front-end development, I have a strong background in back-end web development, particularly using Java as the core language for server-side processing. I develop robust RESTful APIs that interact with databases and front-end applications, ensuring secure and efficient data flow. By using frameworks like Spring Boot, I create back-end services that manage data storage, user authentication, and complex business logic</p>                </div>
-            </div>
-            <!--==Service item end==-->
-             <!--==Service item start==-->
-             <div class="service-item padd-15">
-                <div class="service-item-inner">
-                    <div class="icon">
-                        <i class="fa fa-search"></i>
-                    </div>
-                    <h4>Article Writting</h4>
-                    <p>Find Web development project ideas that i have come up with and The Latest Information Here! Find Web development project ideas.</p>
+                    <p class="service-description">I have a strong background in back-end web development, particularly using Java for server-side processing. I develop robust RESTful APIs that interact with databases and front-end applications, ensuring secure and efficient data flow.</p>
+                    <a href="#" class="read-more" onclick="toggleReadMore(this)">Read More</a>
                 </div>
             </div>
-            <!--==Service item end==-->
-             <!--==Service item start==-->
-             <div class="service-item padd-15">
+            <!-- Service item end -->
+
+            <!-- Service item start -->
+            <div class="service-item padd-15">
                 <div class="service-item-inner">
                     <div class="icon">
-                        <i class="fa fa-bullhorn"></i>
+                        <i class="fa fa-pencil"></i> <!-- Unique icon for Article Writing -->
                     </div>
-                    <h4>Script writing</h4>
-                    <p>Find Web development project ideas that i have come up with and The Latest Information Here! Find Web development project ideas.</p>
+                    <h4>Article Writing</h4>
+                    <p class="service-description">I provide insightful articles on web development trends, project ideas, and best practices. My writing aims to inform and inspire developers at all levels.</p>
+                    <a href="#" class="read-more" onclick="toggleReadMore(event, this)">Read More</a>
                 </div>
             </div>
-            <!--==Service item end==-->
-             <!--==Service item start==-->
-             <div class="service-item padd-15">
+            <!-- Service item end -->
+
+            <!-- Service item start -->
+            <div class="service-item padd-15">
                 <div class="service-item-inner">
                     <div class="icon">
-                        <i class="fa fa-car"></i>
+                        <i class="fa fa-edit"></i> <!-- Unique icon for Script Writing -->
                     </div>
-                    <h4>web design</h4>
-                    <p>Find Web development project ideas that i have come up with and The Latest Information Here! Find Web development project ideas.</p>
+                    <h4>Script Writing</h4>
+                    <p class="service-description">I write engaging scripts for various web development projects, focusing on clarity and purpose to enhance user experience and engagement.</p>
+                    <a href="#" class="read-more" onclick="toggleReadMore(event, this)">Read More</a>
                 </div>
             </div>
-            <!--==Service item end==-->
-       
-            <!--==Service item end==-->
+            <!-- Service item end -->
+
+            <!-- Service item start -->
+            <div class="service-item padd-15">
+                <div class="service-item-inner">
+                    <div class="icon">
+                        <i class="fa fa-paint-brush"></i> <!-- Unique icon for Web Design -->
+                    </div>
+                    <h4>Web Design</h4>
+                    <p class="service-description">My web design services focus on creating visually stunning and functional websites that provide seamless user experiences and align with business goals.</p>
+                    <a href="#" class="read-more" onclick="toggleReadMore(event, this)">Read More</a>
+                </div>
+            </div>
+            <!-- Service item end -->
         </div>
     </div>
 </section>
+
+
+
+
+
+
 <!--service-section-end-->
 <!--portfolio-section-start-->
 <section class="portfolio section " id="portfolio">

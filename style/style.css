@@ -420,37 +420,110 @@
       width: 100%;
       position: relative;
     }
-    .about .about-content .timeline .timeline-item{
-      position: relative;
-      padding-left: 37px;
-      padding-bottom: 50px;
-    }
-    .about .about-content .timeline .timeline-item :last-child{
-      padding-bottom: 0;
-    }
-    .about .about-content .timeline .timeline-item ::before{
-      width: 1px;
-      position: absolute;
-      height: 100%;
-      left: 7px;
-      top: 0;
-      background-color: var(--skin-color);
-    }
-    .about .about-content .timeline .circle-dot{
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 15px;
-      width: 15px;
-      border-radius: 50px;
-      background-color: var(--skin-color);
-    }
-    .about .about-content .timeline .timeline-date{
-      font-weight: 400;
-      font-size: 14px;
-      margin-bottom: 12px;
-      background-color: var(--bg-black-50);
-    }
+    /* General timeline box styling */
+.timeline-box {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Timeline styling */
+.timeline {
+  position: relative;
+  margin-left: 40px; /* Pushes content slightly right */
+  padding: 20px 0;
+  border-left: 3px solid #ff4500; /* Adjust the line color */
+}
+
+/* Timeline item styling */
+.timeline-item {
+  position: relative;
+  padding-left: 40px;
+  padding-bottom: 30px;
+}
+
+/* Circle dots */
+.circle-dot {
+  position: absolute;
+  left: -18px; /* Adjusts the dot position to align with the line */
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--skin-color);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Ensuring the line connects directly with the dots */
+.timeline:before {
+  content: "";
+  position: absolute;
+  left: -12px; /* Centers the line over the dots */
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background-color: var(--skin-color);
+  z-index: 0;
+}
+
+/* Timeline date styling */
+.timeline-date {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Timeline title styling */
+.timeline-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5px;
+  color: #333;
+}
+
+/* Timeline text styling */
+.timeline-text {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #666;
+}
+
+/* service section  */
+.section {
+  position: absolute; /* Position the sections absolutely */
+  top: 0; /* Align to the top */
+  width: calc(100% - 50vh); /* Full width minus left margin */
+  height: 100%; /* Full height */
+  opacity: 0; /* Initially invisible */
+  transform: translateX(-100%); /* Start off-screen to the left */
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition */
+}
+
+.section.active {
+  opacity: 1; /* Make it visible */
+  transform: translateX(0); /* Slide into view */
+}
+
+
+
+.service-description {
+  max-height: 5em; /* Limit height to 5 lines */
+  overflow: hidden;
+  transition: max-height 0.3s ease; /* Smooth transition */
+}
+
+.service-description.expanded {
+  max-height: 20em; /* Allow more lines when expanded */
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 0.5em;
+  color: #007BFF; /* Bootstrap primary color */
+  cursor: pointer;
+}
     .about .about-content .timeline .timeline-date .fa{
       margin-right: 5px;
     }
