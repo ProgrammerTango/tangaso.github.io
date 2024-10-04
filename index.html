@@ -70,10 +70,10 @@
                         <a href="#" class="read-more" onclick="toggleReadMore(event, this)">Read More</a>
                     </div>
                 </div>                
-    <a href="#contact" class="btn hire me">Hire me </a>
+             <a href="#contact" class="btn hire me">Hire me </a>
             </div>
             <div class="home-img padd-15">
-                <img src="imgs/dev.jpg" alt="">
+                <img src="imgs/ds.jpg" alt="">
             </div>
         </div>
     </div>
@@ -469,64 +469,93 @@
 </section>
 <!--portfolio-section-end-->
 <!--Contact section start-->
-    <section class="contact section" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="section-title padd-15">
-                    <h2>Contact me </h2>
-                </div>
-            </div>
-            <h3 class="contact-title padd-15">Do you have any question?</h3>
-            <h4 class="contact-sub-title padd-15">Ready to answer any query</h4>
-            <div class="row">
-                <!--contact info item start-->
-                <div class="contact-info-item padd-15">
-                    <div class="icon"><i class="fa fa-comments"></i></div>
-                    <h4>Comments</h4>
-                    <p>+254797062242</p>        
-                </div>
-                <a href=""></a>
-                <!--contact info item end-->
-                  <!--contact info item start-->
-                  <div class="contact-info-item padd-15">
-                    <div class="icon"><i class="fa fa-phone"></i></div>
-                    <h4>Call us on</h4>
-                    <p>+254797062242</p>        
-                </div>
-                <!--contact info item end-->
-                  <!--contact info item start-->
-                  <div class="contact-info-item padd-15">
-                    <div class="icon"><i class="fa fa-map-marker"></i></div>
-                    <h4>Offices</h4>
-                    <p>Nairobi, Kenya</p>        
-                </div>
-                <!--contact info item end-->
-                  <!--contact info item start-->
-                  <div class="contact-info-item padd-15">
-                    <div class="icon"><i class="fa fa-envelope"></i></div>
-                    <h4>Email us </h4>
-                    <p>dicksonn82@gmail.com</p>        
-                </div>
-                <!--contact info item end-->
-            </div>
-            <h3 class="contact-title padd-15">Send me an email</h3>
-            <h4 class="contact-sub-title padd-15">Am very responsive to messages</h4>
-            <!--contact form-->
-              <form name="submit-to-google-sheet">
-                <input type="text"  class="form-item col-6"  name="name"  placeholder="enter your name" required>
-                <input type="email" class="form-item col-6" name="email" placeholder="enter your email" required>
-                <input type="phone" class="form-item col-6" name="phone" placeholder="enter your phone number" required>
-                <input type="message" class="form-item col-12" name="message" placeholder="enter your message" required>
-                <button type="submit" class="btn" >Submit</button>
-                <span id="msg"></span>
+<!-- EmailJS SDK -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("iMJ39cUOg05FVdYNF"); // Replace with your User ID from EmailJS
+   })();
+</script>
 
-              </form>
+<section class="contact section" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="section-title padd-15">
+                <h2>Contact me</h2>
+            </div>
         </div>
-        <div class="copyright">
+        <h3 class="contact-title padd-15">Do you have any questions?</h3>
+        <h4 class="contact-sub-title padd-15">Ready to answer any query</h4>
+        <div class="row">
+            <!-- Contact info item start -->
+            <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-comments"></i></div>
+                <h4>Comments</h4>
+                <p>+254797062242</p>
+            </div>
+            <!-- Contact info item end -->
+            
+            <!-- Contact info item start -->
+            <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-phone"></i></div>
+                <h4>Call us on</h4>
+                <p>+254797062242</p>
+            </div>
+            <!-- Contact info item end -->
 
-            <p>copyright © developed with <i class="fa fa-heartbeat"></i> by Dickson Tangaso </p>
+            <!-- Contact info item start -->
+            <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-map-marker"></i></div>
+                <h4>Offices</h4>
+                <p>Nairobi, Kenya</p>
+            </div>
+            <!-- Contact info item end -->
+
+            <!-- Contact info item start -->
+            <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-envelope"></i></div>
+                <h4>Email us</h4>
+                <p>dicksonn82@gmail.com</p>
+            </div>
+            <!-- Contact info item end -->
         </div>
-    </section>
+
+        <h3 class="contact-title padd-15">Send me an email</h3>
+        <h4 class="contact-sub-title padd-15">I am very responsive to messages</h4>
+        
+        <!-- Contact form -->
+        <form id="contact-form">
+            <input type="text" class="form-item col-6" name="name" placeholder="Enter your name" required>
+            <input type="email" class="form-item col-6" name="email" placeholder="Enter your email" required>
+            <input type="tel" class="form-item col-6" name="phone" placeholder="Enter your phone number" required>
+            <textarea class="form-item col-12" name="message" placeholder="Enter your message" rows="5" required></textarea>
+            <button type="submit" class="btn">Submit</button>
+            <span id="msg"></span>
+        </form>
+    </div>
+
+    <!-- Footer with copyright -->
+    <div class="copyright">
+        <p>Copyright © developed with <i class="fa fa-heartbeat"></i> by Dickson Tangaso</p>
+    </div>
+</section>
+
+<script type="text/javascript">
+    // Handle form submission
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Send email via EmailJS
+        emailjs.sendForm('service_l4ihwkp', 'template_w364vco', this)
+            .then(function() {
+                document.getElementById('msg').textContent = 'Message sent successfully!';
+            }, function(error) {
+                document.getElementById('msg').textContent = 'Failed to send message. Please try again.';
+            });
+    });
+</script>
+
+
 <!--contact section end-->
 
 </div>
