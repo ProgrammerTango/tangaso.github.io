@@ -103,3 +103,22 @@ function scrollToSection(id) {
     });
   });
   
+
+  // Function to toggle the menu visibility
+  function toggleMenu() {
+    const aside = document.querySelector('.aside');
+    aside.classList.toggle('active');
+  }
+
+  // Function to close the menu when a section is clicked
+  function closeMenu() {
+    const aside = document.querySelector('.aside');
+    aside.classList.remove('active');
+  }
+
+  // Add event listeners to all section links
+  document.querySelectorAll('.aside .nav a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+
