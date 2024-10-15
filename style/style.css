@@ -37,13 +37,7 @@
   ul{
     list-style: none;
   }
-  .section{
-    background: var(--bg-black-900);
-    min-height: 100vh;
-    display: block;
-     padding: 0 30px;
-     opacity: 1;
-  }
+ 
   .hidden{
     display: none !important;
   }
@@ -304,7 +298,181 @@
     border-radius: 15px;
     height: 400px;
   }
+
   /*about*/
+/* About Text */
+.about-text h3 {
+  font-size: 28px;
+  color: #333;
+}
+
+.about-text h3 span {
+  color: var(--text-black-900)
+}
+
+.about-text p {
+  color:var(--text-black-700);
+  font-size: 16px;
+}
+
+/* Personal Info */
+.personal-info-about .info-item {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.personal-info-about .info-item span {
+  color: var(--text-black-900);
+}
+
+/* Skills Section */
+.skills-about .skills-item-about h5 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.skills-about .progress-about {
+  background-color: #ddd;
+  border-radius: 30px;
+  height: 10px;
+  position: relative;
+}
+
+.skills-about .progress-in-about {
+  height: 100%;
+  background-color: var(--skin-color);
+  border-radius: 30px;
+}
+
+.skills-about .skill-percent-about {
+  position: absolute;
+  right: 0;
+  top: -25px;
+  color: #333;
+  font-size: 14px;
+}
+/* about section */
+/* Timeline Box */
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.education-about, .experience-about {
+  flex: 1;
+  min-width: 300px; /* Ensure sections don't collapse on smaller screens */
+  margin: 10px;
+}
+
+.timeline-box-about, .timeline-box1-about {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  height: 100%;
+}
+
+.timeline-box-about {
+  background-color: var(--bg-black-50)
+}
+
+.timeline-box1-about {
+  background-color: var(--bg-black-50)
+}
+
+@media screen and (max-width: 768px) {
+  .education-about, .experience-about {
+    flex-basis: 100%;
+    margin: 10px 0;
+  }
+
+  .timeline-box-about, .timeline-box1-about {
+    width: 100%;
+  }
+}
+
+.timeline-about {
+  position: relative;
+  padding-left: 0;
+}
+
+.timeline-item-about {
+  padding-left: 40px;
+  position: relative;
+}
+
+.timeline-item-about .circle-dot-about {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--skin-color);
+  border-radius: 50%;
+}
+
+.timeline-date-about {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.timeline-title-about {
+  font-size: 18px;
+  color: var(--text-black-900);
+  margin-bottom: 5px;
+}
+
+.timeline-text-about {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Hover Effects */
+.timeline-item-about:hover .circle-dot-about {
+  background-color: var(--skin-color);
+  box-shadow: 0 0 0 6px rgba(0, 123, 255, 0.3);
+  margin-left: -2%;
+}
+
+.timeline-item-about:hover {
+  background-color: var(--bg-black-900);
+  border-radius: 5px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+/* Buttons */
+.buttons-about a {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.buttons-about a:hover {
+  background-color: #0056b3;
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+
+    
+.timeline-box {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+
   .about .about-content{
     flex: 0 0 100%;
     max-width: 100%;
@@ -490,9 +658,9 @@
   margin-top: 5px;
   color: #666;
 }
-
 /* service section  */
 .section {
+  background: var(--bg-black-900);
   position: absolute; /* Position the sections absolutely */
   top: 0; /* Align to the top */
   width: calc(100% - 40vh); /* Full width minus left margin */
@@ -754,17 +922,19 @@
     left: 0;
   }
 
-  /* Add a hamburger icon to open/close the menu */
-  .menu-toggle {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    cursor: pointer;
-    z-index: 10;
-    font-size: 2rem;
-    color: var(--skin-color);
-    display: block;
-  }
+/* Add a hamburger icon to open/close the menu */
+.menu-toggle {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 10;
+  font-size: 2rem;
+  color: var(--skin-color);
+  display: block;
+}
+
 
   .main-content {
     padding-left: 0;

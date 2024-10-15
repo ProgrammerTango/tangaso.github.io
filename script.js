@@ -74,16 +74,6 @@ document.querySelector('.hire.me').addEventListener('click', function (event) {
     showSection(this);
 });
 
-// Update your showSection function to handle any anchor link
-function showSection(element) {
-    for (let i = 0; i < totalSection; i++) {
-        allSection[i].classList.remove('active'); // Remove active class from all sections
-    }
-
-    const target = element.getAttribute("href").split("#")[1]; // Get the target section ID
-    document.querySelector("#" + target).classList.add("active"); // Activate the correct section
-}
-
 
 
 // Smooth scroll to section
@@ -120,5 +110,6 @@ function scrollToSection(id) {
   document.querySelectorAll('.aside .nav a').forEach(link => {
     link.addEventListener('click', closeMenu);
   });
+  
 
 
