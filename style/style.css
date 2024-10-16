@@ -911,6 +911,29 @@
     }
     /* Style the aside menu for small screens */
 @media (max-width: 991px) {
+  .section-title h2{
+     color: var(--text-black-900);
+    margin-left: 15px;
+  }
+  h3.my-profession{
+    font-size: 15px;
+    margin: 15px 0;
+  }
+  h3.hello{
+    font-size: 15px;
+    margin: 15px 0;
+  }
+  #readmore .readmore__content {
+    width: 200%;
+    max-width: 190%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    text-align: justify; /* Optional: ensures the text stretches across the width */
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 15px;
+  }
   /* The aside menu is hidden by default */
   .aside {
     left: -250px;
