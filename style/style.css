@@ -402,7 +402,6 @@
   padding-left: 40px;
   position: relative;
   background-color: var(--bg-black-100);
-  border: 1px solid var(--bg-black-50);
 }
 
 .timeline-item-about .circle-dot-about {
@@ -412,7 +411,6 @@
   width: 20px;
   height: 20px;
   background-color: var(--skin-color);
-  border-radius: 50%;
 }
 
 .timeline-date-about {
@@ -432,19 +430,7 @@
   color: #555;
 }
 
-/* Hover Effects */
-.timeline-item-about:hover .circle-dot-about {
-  background-color: var(--skin-color);
-  box-shadow: 0 0 0 6px rgba(0, 123, 255, 0.3);
-  margin-left: -2%;
-}
 
-.timeline-item-about:hover {
-  background-color: var(--bg-black-900);
-  border-radius: 5px;
-  padding: 15px;
-  transition: all 0.3s ease;
-}
 
 /* Buttons */
 .buttons-about a {
@@ -1036,7 +1022,6 @@ display: none;
       gap: 5px; /* Add space between items */
       margin-left: 0px;
       width: 150%;
-      background-color: red;
   }
 
     .progress {
@@ -1050,17 +1035,6 @@ display: none;
         height: 100%;
         background-color: #4caf50;
         border-radius: 5px;
-    }
-
-    .skill-percent {
-        text-align: right;
-        font-size: 12px;
-        margin-top: 5px;
-    }
-
-    /* Reorder the button to appear below the skills */
-    .view-cv-btn {
-        order: 1;
     }
 
   .section-title h2 {
