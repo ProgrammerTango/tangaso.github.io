@@ -989,17 +989,6 @@ display: none;
     margin-bottom: 120px;
 }
 
-  .personal-info1 {
-    background-color: #f0f4f8; /* Light background for contrast */
-    padding: 20px; /* Padding around the content */
-    border-radius: 10px; /* Smooth corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin-bottom: 20px; /* Space at the bottom */
-    max-width: 600px; /* Optional: Limit width for better readability */
-    margin: auto; /* Center the container horizontally */
-    margin-left: 50px;
-    margin-top: -190%;
-}
 
 .info-items1 {
     display: flex;
@@ -1022,25 +1011,12 @@ display: none;
     color:var(--skin-color)
 }
 
-  .skills .row {
-    margin-top: 250px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr); /* 3 columns */
-      gap: 5px; /* Add space between items */
-      margin-left: 0px;
-      width: 150%;
-  }
 
     /* Move the skills section above the View CV button */
     .skills {
         order: -1; /* This will move the skills section above the button */
     }
 
-    .skills-items {
-        padding: 10px;
-        background-color: #f8f8f8; /* Optional: Add background color */
-        border-radius: 5px;
-    }
 
     .progress {
         background-color: #ddd;
@@ -1221,15 +1197,7 @@ display: none;
   margin-right: 5px;
 }
 
-/* Skills section */
-.skills-items {
-  width: 100%;
-  margin-bottom: 10px;
-}
 
-.skills-items h5 {
-  font-size: 1rem;
-}
 
 .progress {
   height: 10px;
