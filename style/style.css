@@ -1035,7 +1035,8 @@ display: none;
       grid-template-columns: repeat(3, 1fr); /* 3 columns */
       gap: 5px; /* Add space between items */
       margin-left: 0px;
-      width: 100%;
+      width: 150%;
+      background-color: red;
   }
 
     .progress {
