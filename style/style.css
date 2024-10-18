@@ -863,7 +863,7 @@
   position: relative; /* Allows positioning of pseudo-elements */
   margin-top: 20px; /* Space above the footer */
   border-top: 5px solid #e74c3c; /* Top border for a stylish effect */
-  border-radius: 10px; /* Rounded corners */
+  border-radius: 50px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
 }
 
@@ -966,12 +966,7 @@ display: none;
     margin: 15px; /* Space between items */
 }
 
-/* If you want to ensure that .row is always displayed */
-.row {
-    display: flex; /* Keep flex layout */
-    opacity: 1; /* Ensure it's visible */
-    transform: none; /* Remove any transform that could hide it */
-}
+
   .copyright {
     width: 99vw; /* Ensure full width on smaller screens */
     border-radius: 10; /* Remove rounded corners for full-width effect */
@@ -1016,12 +1011,16 @@ display: none;
     color:var(--skin-color)
 }
 
-  .skills .row {
+.about .skills .row {
       display: grid;
-      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+      grid-template-columns: repeat(1, 1fr); /* 3 columns */
       gap: 5px; /* Add space between items */
       margin-left: 0px;
       width: 150%;
+  }
+  .portfolio .row,
+  .service .row {
+      display: block; /* or whatever styles are needed */
   }
 
     .progress {
