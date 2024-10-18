@@ -952,7 +952,6 @@ display: none;
     }
     /* Style the aside menu for small screens */
 @media (max-width: 991px) {
-
   .row .buttons {
     height: 0px;
   }
@@ -1144,14 +1143,7 @@ display: none;
 
 }
 .home-img::before {
-  content: '';
-  position: absolute;
-  height: 80px;
-  width: 80px;
-  border-top: 10px solid var(--skin-color);
-  border-left: 10px solid var(--skin-color);
-  left: 5px;
-  top: -30px;
+display: none;
 
 }
 .about .container {
