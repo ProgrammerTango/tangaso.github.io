@@ -971,8 +971,7 @@ display: none;
     height: 0px;
   }
   .buttons .btn{
-    background:red;
-    margin-top: 45vh;
+    margin-top: 46vh;
     margin-left: 15vh;
   }
   .contact-info-item {
@@ -1031,12 +1030,8 @@ display: none;
 }
 
   .skills .row {
-    margin-top: 250px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr); /* 3 columns */
-      gap: 5px; /* Add space between items */
-      margin-left: 0px;
-      width: 150%;
+      margin-left: 3px;
+      min-width: 150%;
   }
 
     .progress {
