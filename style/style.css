@@ -1021,7 +1021,7 @@ display: none;
       grid-template-columns: repeat(3, 1fr); /* 3 columns */
       gap: 5px; /* Add space between items */
       margin-left: 0px;
-      width: 150%;
+      width: 100%;
   }
 
     .progress {
