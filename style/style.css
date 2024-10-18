@@ -903,7 +903,7 @@ display: none;
 }
     @media (max-width: 991px) {
       #about1 {
-        display: none; /* Hide the section on large screens */
+        display: block; /* Hide the section on large screens */
       }
       #about {
         display: none; /* Hide the section on large screens */
