@@ -990,6 +990,7 @@ display: none;
 }
 
 
+
 .info-items1 {
     display: flex;
     justify-content: space-between; /* Spread out the text evenly */
@@ -1011,12 +1012,25 @@ display: none;
     color:var(--skin-color)
 }
 
+  .skills .row {
+    margin-top: 250px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+      gap: 5px; /* Add space between items */
+      margin-left: 0px;
+      width: 150%;
+  }
 
     /* Move the skills section above the View CV button */
     .skills {
         order: -1; /* This will move the skills section above the button */
     }
 
+    .skills-items {
+        padding: 10px;
+        background-color: #f8f8f8; /* Optional: Add background color */
+        border-radius: 5px;
+    }
 
     .progress {
         background-color: #ddd;
@@ -1197,7 +1211,15 @@ display: none;
   margin-right: 5px;
 }
 
+/* Skills section */
+.skills-items {
+  width: 100%;
+  margin-bottom: 10px;
+}
 
+.skills-items h5 {
+  font-size: 1rem;
+}
 
 .progress {
   height: 10px;
