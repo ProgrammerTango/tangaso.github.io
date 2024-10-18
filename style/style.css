@@ -96,20 +96,7 @@
     margin-right: -15px;
     position: relative;
   }
-  .buttons .btn{
-    margin-top: 30px;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 12px 35px;
-    color: white;
-    border-radius: 40px;
-    display: inline-block;
-    white-space: nowrap;
-    border: none;
-    background:var(--skin-color);
-    transition: all 0.3s ease;
-  }
-  #contact .btn{
+  .btn{
     margin-top: 30px;
     font-size: 16px;
     font-weight: 500;
@@ -122,7 +109,9 @@
     background: var(--skin-color);
     transition: all 0.3s ease;
   }
-
+  .btn:hover{
+    transform: scale(1.05);
+  }
 .shadow-dark{
   box-shadow: 0 0 20px rgba(48, 46, 77,0.15);
 }
@@ -338,6 +327,33 @@
   color: var(--text-black-900);
 }
 
+/* Skills Section */
+.skills-about .skills-item-about h5 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.skills-about .progress-about {
+  background-color: #ddd;
+  border-radius: 30px;
+  height: 10px;
+  position: relative;
+}
+
+.skills-about .progress-in-about {
+  height: 100%;
+  background-color: var(--skin-color);
+  border-radius: 30px;
+}
+
+.skills-about .skill-percent-about {
+  position: absolute;
+  right: 0;
+  top: -25px;
+  color: #333;
+  font-size: 14px;
+}
 /* about section */
 /* Timeline Box */
 .row {
@@ -386,6 +402,7 @@
   padding-left: 40px;
   position: relative;
   background-color: var(--bg-black-100);
+  border: 1px solid var(--bg-black-50);
 }
 
 .timeline-item-about .circle-dot-about {
@@ -414,6 +431,21 @@
   font-size: 16px;
   color: #555;
 }
+
+/* Hover Effects */
+.timeline-item-about:hover .circle-dot-about {
+  background-color: var(--skin-color);
+  box-shadow: 0 0 0 6px rgba(0, 123, 255, 0.3);
+  margin-left: -2%;
+}
+
+.timeline-item-about:hover {
+  background-color: var(--bg-black-900);
+  border-radius: 5px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
 /* Buttons */
 .buttons-about a {
   background-color: #007bff;
@@ -865,7 +897,7 @@
     }
     /* Fly-in effect for all sections */
 .section-title, .contact-title, .contact-sub-title, .contact-info-item, 
-.form-item, .about-text,.skills-items, .timeline-item-about, 
+.form-item, .about-text, .info-items1, .skills-items, .timeline-item-about, 
 .service-item, .portfolio-item {
     opacity: 0; /* Start invisible */
     transform: translateY(50px); /* Start from below */
@@ -881,10 +913,6 @@
 display: none;
 }
     @media (max-width: 991px) {
-      .skills {
-        margin-left: 18%;
-        min-width: 70%;
-      }
       /* General section visibility */
       .section {
           display: block; /* Ensure all sections are displayed */
@@ -903,7 +931,7 @@ display: none;
   
       /* Fly-in effect on scroll for small screens */
       .section-title, .contact-title, .contact-sub-title, .contact-info-item, 
-      .form-item, .about-text,.skills-items, .timeline-item-about, 
+      .form-item, .about-text, .info-items1, .skills-items, .timeline-item-about, 
       .service-item, .portfolio-item {
           opacity: 0; /* Initially hidden */
           transform: translateY(50px); /* Positioned below initially */
@@ -938,14 +966,6 @@ display: none;
     }
     /* Style the aside menu for small screens */
 @media (max-width: 991px) {
-  .row .buttons {
-    height: 0px;
-  }
-  .buttons .btn{
-    background:var(--skin-color);
-    margin-top: 40vh;
-    margin-left: 15vh;
-  }
   .contact-info-item {
     flex: 1 1 calc(50% - 30px); /* Two items per row with some margin */
     margin: 15px; /* Space between items */
@@ -980,6 +1000,47 @@ display: none;
     margin-top: -190%;
 }
 
+.info-items1 {
+    display: flex;
+    justify-content: space-between; /* Spread out the text evenly */
+    padding: 10px 0; /* Padding between each row */
+    border-bottom: 1px solid #ddd; /* Optional: Add a subtle separator */
+}
+
+.info-items1:last-child {
+    border-bottom: none; /* Remove bottom border on the last item */
+}
+
+.info-items1 p {
+    font-size: 16px; /* Slightly larger font for readability */
+    color: #333; /* Darker text color */
+}
+
+.info-items1 p span {
+    font-weight: bold; /* Make the span stand out */
+    color:var(--skin-color)
+}
+
+  .skills .row {
+    margin-top: 250px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+      gap: 5px; /* Add space between items */
+      margin-left: 0px;
+      width: 150%;
+  }
+
+    /* Move the skills section above the View CV button */
+    .skills {
+        order: -1; /* This will move the skills section above the button */
+    }
+
+    .skills-items {
+        padding: 10px;
+        background-color: #f8f8f8; /* Optional: Add background color */
+        border-radius: 5px;
+    }
+
     .progress {
         background-color: #ddd;
         border-radius: 5px;
@@ -999,7 +1060,11 @@ display: none;
         margin-top: 5px;
     }
 
-   
+    /* Reorder the button to appear below the skills */
+    .view-cv-btn {
+        order: 1;
+    }
+
   .section-title h2 {
     margin-top: 0;   /* Remove default margin above */
     padding-top: 0;  /* Remove padding above */
@@ -1153,6 +1218,16 @@ display: none;
   font-size: 0.9rem;
   padding: 8px 12px;
   margin-right: 5px;
+}
+
+/* Skills section */
+.skills-items {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.skills-items h5 {
+  font-size: 1rem;
 }
 
 .progress {
