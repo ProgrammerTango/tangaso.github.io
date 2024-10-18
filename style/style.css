@@ -971,6 +971,7 @@ display: none;
     height: 0px;
   }
   .buttons .btn{
+    background:var(--skin-color);
     margin-top: 46vh;
     margin-left: 15vh;
   }
@@ -1029,9 +1030,14 @@ display: none;
     color:var(--skin-color)
 }
 
-  .skills .row {
-      margin-left: 3px;
-      min-width: 150%;
+  .about .skills .row {
+    margin-top: 250px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+      gap: 5px; /* Add space between items */
+      margin-left: 0px;
+      width: 150%;
+      background-color: rgb(236, 167, 167);
   }
 
     .progress {
