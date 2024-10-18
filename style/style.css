@@ -1308,10 +1308,6 @@ display: none;
       flex: 0 0 100%;
       max-width: 100%;
   }
-  .contact-info-item {
-    flex: 1 1 100%; /* Full width on very small screens */
-    margin: 10px 0; /* Vertical margin for spacing */
-}
 }
 
 
