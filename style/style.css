@@ -913,6 +913,10 @@
 display: none;
 }
     @media (max-width: 991px) {
+      .about .about-content .skills .skills-items{
+        flex: 0 0 100%;
+        min-width: 200%;
+      }
       /* General section visibility */
       .section {
           display: block; /* Ensure all sections are displayed */
