@@ -60,7 +60,8 @@
   .section-title{
     flex: 0 0 100%;
     max-width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    margin-top: -60px;
   }
   .section-title h2{
     font-size: 40px;
@@ -369,18 +370,16 @@
 
 .timeline-box-about, .timeline-box1-about {
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   height: 100%;
 }
 
 .timeline-box-about {
-  background-color: var(--bg-black-50)
+  background-color:  var(--bg-black-100)
 }
 
 .timeline-box1-about {
-  background-color: var(--bg-black-50)
+  background-color: var(--bg-black-100)
 }
 
 @media screen and (max-width: 768px) {
@@ -402,6 +401,8 @@
 .timeline-item-about {
   padding-left: 40px;
   position: relative;
+  background-color: var(--bg-black-100);
+  border: 1px solid var(--bg-black-50);
 }
 
 .timeline-item-about .circle-dot-about {
@@ -495,6 +496,7 @@
       line-height: 25px;
       color: var(--text-black-700);
     }
+
     .about .about-content .personal-info{
       flex: 0 0 60%;
       max-width: 60%;
@@ -659,27 +661,6 @@
   color: #666;
 }
 /* service section  */
-.section {
-  background: var(--bg-black-900);
-  position: absolute; /* Position the sections absolutely */
-  top: 0; /* Align to the top */
-  width: calc(100% - 40vh); /* Full width minus left margin */
-  height: 100%; /* Full height */
-  opacity: 0; /* Initially invisible */
-  transform: translateX(-100%); /* Start off-screen to the left */
-  transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition */
-  overflow: hidden; /* Prevent extra scroll if there's no content */
-  transform: translateX(-100%); /* Start off-screen */
-  min-height: 100vh; /* Ensure the section takes at least the full viewport height, but expands based on content */
-  overflow-y: auto; /* Allow vertical scrolling inside sections when content exceeds */
-  max-height: 100vh; /* Limit section height to the viewport height */
-}
-
-.section.active {
-  opacity: 1; /* Make it visible */
-  transform: translateX(0); /* Slide into view */
-}
-
 .service-description {
   max-height: 5em; /* Limit height to 5 lines */
   overflow: hidden;
@@ -747,6 +728,7 @@
       flex: 0 0 33.33%;
       max-width: 33.33%;
     }
+
     .service .service-item .service-item-inner{
       background-color: var(--bg-black-100);
       border: 1px solid var(--bg-black-50);
@@ -885,23 +867,96 @@
       height: 50px;
       padding: 0 50px;
     }
-    .copyright{
-      width: 100%;
-      text-align: center;
-      padding: 25px 0;
-      background-color:var(--skin-color);
-      font-weight: 300;
-      margin-top: 20px;
-      color: var(--bg-black-100);
-      text-transform: capitalize;
-    }
-    .copyright i{
-      color: red;
-    }
+/* Footer Styles */
+.copyright {
+  background-color:var(--skin-color); /* Dark background for contrast */
+  color: #ffffff; /* White text color for better readability */
+  text-align: center; /* Center the text */
+  padding: 20px 0; /* Vertical padding for space */
+  font-family: 'Arial', sans-serif; /* Font for the text */
+  position: relative; /* Allows positioning of pseudo-elements */
+  margin-top: 20px; /* Space above the footer */
+  border-top: 5px solid #e74c3c; /* Top border for a stylish effect */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Icon styles */
+.copyright i {
+  color: #e74c3c; /* Red color for the heart icon */
+  margin: 0 5px; /* Space around the icon */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.copyright i:hover {
+  color: #ff7f50; /* Change color on hover */
+}
+
     .aside #close, #close1{
       display: none;
     }
+    /* Fly-in effect for all sections */
+.section-title, .contact-title, .contact-sub-title, .contact-info-item, 
+.form-item, .about-text, .info-items1, .skills-items, .timeline-item-about, 
+.service-item, .portfolio-item {
+    opacity: 0; /* Start invisible */
+    transform: translateY(50px); /* Start from below */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+}
 
+/* Fly-in when in view */
+.fly-in {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to normal position */
+}
+.menu-toggle {
+display: none;
+}
+    @media (max-width: 991px) {
+      /* General section visibility */
+      .section {
+          display: block; /* Ensure all sections are displayed */
+          opacity: 1; /* Ensure visibility */
+          transform: none; /* Remove any transform to keep elements in place */
+      }
+  
+      /* Specific to each section to fix any display issues */
+      #services, #portfolio, #about, #contact {
+          display: block;
+      }
+            #services, #portfolio{
+              display: block;
+              margin-left: 20px;
+          }
+  
+      /* Fly-in effect on scroll for small screens */
+      .section-title, .contact-title, .contact-sub-title, .contact-info-item, 
+      .form-item, .about-text, .info-items1, .skills-items, .timeline-item-about, 
+      .service-item, .portfolio-item {
+          opacity: 0; /* Initially hidden */
+          transform: translateY(50px); /* Positioned below initially */
+          transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth fly-in transition */
+      }
+  
+      /* Fly-in effect when the element comes into view */
+      .fly-in {
+          opacity: 1; /* Fully visible when in view */
+          transform: translateY(0); /* Reset position */
+      }
+  
+      /* Portfolio items adjustments */
+      .portfolio-item {
+          display: block;
+          margin-bottom: 20px; /* Add spacing between items */
+      }
+  
+      /* Service items adjustments */
+      .service-item {
+          display: block;
+          margin-bottom: 20px; /* Add spacing between items */
+      }
+  }
+  
 
     @media (min-width: 992px) {
       .aside {
@@ -911,10 +966,107 @@
     }
     /* Style the aside menu for small screens */
 @media (max-width: 991px) {
-  .section-title h2{
-     color: var(--text-black-900);
-    margin-left: 15px;
+  .copyright {
+    width: 99vw; /* Ensure full width on smaller screens */
+    border-radius: 10; /* Remove rounded corners for full-width effect */
+    margin-left: 0; /* Ensure no margin */
+    margin-right: 0; /* Ensure no margin */
+}
+  .contact-title, .contact-sub-title {
+    margin: 0; /* Remove or reduce any top/bottom margin */
+    margin-bottom: 120px;
+}
+
+  .personal-info1 {
+    background-color: #f0f4f8; /* Light background for contrast */
+    padding: 20px; /* Padding around the content */
+    border-radius: 10px; /* Smooth corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Space at the bottom */
+    max-width: 600px; /* Optional: Limit width for better readability */
+    margin: auto; /* Center the container horizontally */
+    margin-left: 50px;
+    margin-top: -190%;
+}
+
+.info-items1 {
+    display: flex;
+    justify-content: space-between; /* Spread out the text evenly */
+    padding: 10px 0; /* Padding between each row */
+    border-bottom: 1px solid #ddd; /* Optional: Add a subtle separator */
+}
+
+.info-items1:last-child {
+    border-bottom: none; /* Remove bottom border on the last item */
+}
+
+.info-items1 p {
+    font-size: 16px; /* Slightly larger font for readability */
+    color: #333; /* Darker text color */
+}
+
+.info-items1 p span {
+    font-weight: bold; /* Make the span stand out */
+    color:var(--skin-color)
+}
+
+  .skills .row {
+    margin-top: 250px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+      gap: 5px; /* Add space between items */
+      margin-left: 0px;
+      width: 150%;
   }
+
+    /* Move the skills section above the View CV button */
+    .skills {
+        order: -1; /* This will move the skills section above the button */
+    }
+
+    .skills-items {
+        padding: 10px;
+        background-color: #f8f8f8; /* Optional: Add background color */
+        border-radius: 5px;
+    }
+
+    .progress {
+        background-color: #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        height: 10px;
+    }
+
+    .progress-in {
+        height: 100%;
+        background-color: #4caf50;
+        border-radius: 5px;
+    }
+
+    .skill-percent {
+        text-align: right;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    /* Reorder the button to appear below the skills */
+    .view-cv-btn {
+        order: 1;
+    }
+
+  .section-title h2 {
+    margin-top: 0;   /* Remove default margin above */
+    padding-top: 0;  /* Remove padding above */
+    margin-bottom: 10px; /* You can adjust this value for space below the heading */
+    line-height: 1.2;  /* Adjust line-height to fit content better */
+    font-size: 1.8rem;
+    color: var(--text-black-900);
+    margin-left: 15px;
+}
+.about.section {
+  margin-top: -270px; /* No margin above the section */
+}
+
   h3.my-profession{
     font-size: 15px;
     margin: 15px 0;
@@ -945,20 +1097,37 @@
     left: 0;
   }
 
-/* Add a hamburger icon to open/close the menu */
 .menu-toggle {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  cursor: pointer;
-  z-index: 10;
-  font-size: 2rem;
-  color: var(--skin-color);
   display: block;
+  top: 10px;
+  left: 0; /* Start from the left edge */
+  width: 100%; /* Cover the full width */
+  position: fixed; /* Keep it fixed on the screen */
+  z-index: 1000; /* Ensure it's above other elements */
+  color: var(--skin-color);
+  background-color:var(--bg-black-900); /* Background color */
+  padding: 10px 15px; /* Add padding for spacing */
+  border-radius: 0; /* Remove rounded corners since it's full width */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Optional: Add shadow */
+  font-family: Arial, sans-serif; /* Font style */
+  font-size: 16px; /* Text size */
+  color: #333; /* Text color */
+  cursor: pointer; /* Add pointer cursor */
+  text-align: center; /* Center the text and icon */
 }
 
+/* Styling for the name "Dickson" */
+.menu-name {
+  font-weight: bold; /* Make it bold */
+  margin-left: -200px; /* Add some space between the name and the icon */
+}
 
+/* Styling for the hamburger menu icon */
+.menu-icon {
+  color:var(--skin-color);
+  font-size: 20px; /* Increase the size of the icon */
+  margin-left: 100px;
+}
   .main-content {
     padding-left: 0;
   }
@@ -1011,9 +1180,6 @@ display: none;
   padding: 10px;
 }
 
-.about .section-title h2 {
-  font-size: 1.8rem;
-}
 
 .about .about-text h3 {
   font-size: 1.5rem;

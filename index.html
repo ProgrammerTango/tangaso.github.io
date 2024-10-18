@@ -50,10 +50,13 @@
 <!--aside end-->
 <!--main-content-start-->
 <div class="main-content">
-    <!-- Add this inside your HTML body -->
-<div class="menu-toggle" onclick="toggleMenu()">
-    &#9776; <!-- This is the hamburger icon -->
-</div>
+    
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <span class="menu-name">Dickson</span> 
+        <span class="menu-icon">&#9776;</span> <!-- Hamburger icon -->
+    </div>
+    
+    
 
 <!--home-section-start-->
 <section class="home section active" id="home">
@@ -72,7 +75,19 @@
                         <a href="#" class="read-more" onclick="toggleReadMore(event, this)">Read More</a>
                     </div>
                 </div>                
-             <a href="#contact" class="btn hire me">Hire me </a>
+             <a href="#contact" class="hire me" style="color: white">.</a>
+             <a href="javascript:void(0);" class="hire-me" style=" margin-top: 30px;
+             font-size: 16px;
+             font-weight: 500;
+             padding: 12px 35px;
+             color: white;
+             border-radius: 40px;
+             display: inline-block;
+             white-space: nowrap;
+             border: none;
+             background: var(--skin-color);
+             transition: all 0.3s ease;" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Hire me</a>
+
             </div>
             <div class="home-img padd-15">
                 <img src="imgs/ds.jpg" alt="">
@@ -93,33 +108,32 @@
             <div class="about-content padd-15">
                 <div class="row">
                     <div class="about-text padd-15">
-                        <h3>I'm Dickson Tangaso and <span>web developer</span></h3>
                         <p>As a true Professional, I have a real ‘can-do’ attitude, good knowledge of Data management, ICT, IT, security and networking principles and pragmatic approach to finding solutions.</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="personal-info padd-15">
+                    <div class="personal-info1 padd-15">
                         <div class="row">
                      
-                            <div class="info-items padd-15">
+                            <div class="info-items1 padd-15">
                                 <p>Birthday: <span>1998</span></p>
                             </div>
-                            <div class="info-items padd-15">
+                            <div class="info-items1 padd-15">
                                 <p>Age: <span>26</span></p>
                             </div>
-                            <div class="info-items padd-15">
+                            <div class="info-items1 padd-15">
                                 <p>Website: <span>#</span></p>
                             </div>
-                            <div class="info-items padd-15">
+                            <div class="info-items1 padd-15">
                                 <p>Email: <span>dicksonn82@gmail.com</span></p>
                             </div>
-                            <div class="info-items padd-15">
+                            <div class="info-items1 padd-15">
                                 <p>Degree: <span>Computer science</span></p>
                             </div>
-                            <div class="info-items padd-15">
+                            <div class="info-items1 padd-15">
                                 <p>phone: <span>+254797062242</span></p>
                             </div>
-                            <div class="info-items padd-15">
+                            <div class="info-items1 padd-15">
                                 <p>City: <span>Nairobi Kenya</span></p>
                             </div>
                         </div>
@@ -222,13 +236,13 @@
                         <h3 class="title-about">Experience</h3>
                         <div class="timeline-box1-about padd-15">
                             <div class="timeline-about">
-                                <div class="timeline-item-about">
+                                <div class="timeline-item-about">     
                                     <div class="circle-dot-about"></div>
                                     <h3 class="timeline-date-about">
                                         <i class="fa fa-calendar"></i> 11th June 2024 to Date
                                     </h3>
                                     <h4 class="timeline-title-about">Kenya Post Savings Bank</h4>
-                                    <p class="timeline-text-about">Assistant System Developer</p>
+                                    <p >Assistant System Developer</p>
                                 </div>
                                 <div class="timeline-item-about">
                                     <div class="circle-dot-about"></div>
@@ -236,7 +250,7 @@
                                         <i class="fa fa-calendar"></i> 5th May 2023 to 10th June 2024
                                     </h4>
                                     <h4 class="timeline-title-about">Kenya Revenue Authority</h4>
-                                    <p class="timeline-text-about">ICT Assistant</p>
+                                    <p>ICT Assistant</p>
                                 </div>
                                 <div class="timeline-item-about">
                                     <div class="circle-dot-about"></div>
@@ -244,24 +258,25 @@
                                         <i class="fa fa-calendar"></i> 3rd Jan 2023 to 28th April 2023
                                     </h3>
                                     <h4 class="timeline-title-about">Minet Insurance Brokers</h4>
-                                    <p class="timeline-text-about">Software Developer</p>
+                                    <p >Software Developer</p>
                                 </div>
+                       
                                 <div class="timeline-item-about">
-                                    <div class="circle-dot"></div>
+                                    <div class="circle-dot-about"></div>
                                     <h3 class="timeline-date">
                                         <i class="fa fa-calendar"></i> 19th APRIL 2022 to 19th OCT 2022
                                     </h3>
-                                    <h4 class="timeline-title">OFFICE OF THE REGISTRAR OF POLITICAL PARTIES (ORPP)</h4>
+                                    <h4 class="timeline-title-about">OFFICE OF THE REGISTRAR OF POLITICAL PARTIES (ORPP)</h4>
                                     <p>Constituency Monitor</p>
-                                </div>             
+                                </div>  
                                 <div class="timeline-item-about">
                                     <div class="circle-dot-about"></div>
                                     <h3 class="timeline-date">
                                         <i class="fa fa-calendar"></i> 2017
                                     </h3>
-                                    <h4 class="timeline-title">Zalego Institute Of Technology</h4>
+                                    <h4 class="timeline-title-about">Zalego Institute Of Technology</h4>
                                     <p>Web Designer</p>
-                                </div>  
+                                </div> 
                             </div>
                         </div>
                     </div>

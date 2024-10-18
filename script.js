@@ -112,4 +112,36 @@ function scrollToSection(id) {
   });
   
 
+  document.addEventListener('DOMContentLoaded', function() {
+    const flyInElements = document.querySelectorAll(
+        '.section-title, .contact-title, .contact-sub-title, .contact-info-item, .form-item, .about-text, .info-items1, .skills-items, .timeline-item-about, .service-item, .portfolio-item'
+    );
+
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    function checkIfInView() {
+        flyInElements.forEach((element) => {
+            if (isInViewport(element)) {
+                element.classList.add('fly-in');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkIfInView);
+    checkIfInView(); // Check on page load in case some items are already in view
+
+    // Ensure sections are fly-in even on smaller screens when scrolled into view
+    window.addEventListener('resize', function() {
+        checkIfInView();
+    });
+});
+
 
