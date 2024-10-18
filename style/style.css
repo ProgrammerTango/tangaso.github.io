@@ -1030,13 +1030,12 @@ display: none;
     color:var(--skin-color)
 }
 
-  .about .skills .row {
+  .skills .row {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); /* 3 columns */
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
       gap: 5px; /* Add space between items */
       margin-left: 0px;
-      width: 150%;
-      background-color: red;
+      width: 100%;
   }
 
     .progress {
