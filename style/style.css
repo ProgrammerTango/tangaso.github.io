@@ -966,18 +966,6 @@ display: none;
     }
     /* Style the aside menu for small screens */
 @media (max-width: 991px) {
-
-  .contact-info-item {
-    flex: 1 1 calc(50% - 30px); /* Two items per row with some margin */
-    margin: 15px; /* Space between items */
-}
-
-/* If you want to ensure that .row is always displayed */
-.row {
-    display: flex; /* Keep flex layout */
-    opacity: 1; /* Ensure it's visible */
-    transform: none; /* Remove any transform that could hide it */
-}
   .copyright {
     width: 99vw; /* Ensure full width on smaller screens */
     border-radius: 10; /* Remove rounded corners for full-width effect */
@@ -989,7 +977,17 @@ display: none;
     margin-bottom: 120px;
 }
 
-
+  .personal-info1 {
+    background-color: #f0f4f8; /* Light background for contrast */
+    padding: 20px; /* Padding around the content */
+    border-radius: 10px; /* Smooth corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Space at the bottom */
+    max-width: 600px; /* Optional: Limit width for better readability */
+    margin: auto; /* Center the container horizontally */
+    margin-left: 50px;
+    margin-top: -190%;
+}
 
 .info-items1 {
     display: flex;
