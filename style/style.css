@@ -898,7 +898,7 @@
 .menu-toggle {
 display: none;
 }
-    @media (max-width: 991px) {
+    @media (max-width: 767px) {
       /* General section visibility */
       .section {
           display: block; /* Ensure all sections are displayed */
