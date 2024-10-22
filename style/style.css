@@ -1196,7 +1196,7 @@ display: none;
 /* Larger screens */
 
     /* Small screen adjustments */
-@media (max-width: 767px) {
+@media (max-width: 575px) {
     .home .home-content {
       padding: 10px; /* Reduce padding for smaller screens */
   }
