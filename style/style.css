@@ -402,16 +402,17 @@
   padding-left: 40px;
   position: relative;
   background-color: var(--bg-black-100);
+  
+  /* Shadow Effect */
+  box-shadow: 0 4px 8px rgba(1, 0, 0, 2.0); /* Adjust values as needed */
+  border-radius: 8px; /* Optional: adds rounded corners */
+  transition: box-shadow 0.3s ease; /* Optional: smooth transition on hover */
 }
 
-.timeline-item-about .circle-dot-about {
-  position: absolute;
-  left: 0;
-  top: 10px;
-  width: 20px;
-  height: 20px;
-  background-color: var(--skin-color);
+.timeline-item-about:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
 }
+
 
 .timeline-date-about {
   color: #666;
