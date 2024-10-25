@@ -1207,12 +1207,11 @@ display: none;
   height: 90vh; /* Full height */
   z-index: 999;
   transition: top 0.3s ease; /* Smooth transition */
-  margin-top: -30%;
   background-color: var(--bg-black-100); /* Your background color */
   border: 1px solid rgba(255, 255, 255, 0.2); /* Soft white border */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Shadow for depth */
   border-radius: 8px; /* Optional: rounded corners */
-}
+} 
 
 /* When the menu is active, show it */
 .aside.active {

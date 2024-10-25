@@ -145,36 +145,3 @@ function scrollToSection(id) {
 });
 
 
-let lastScrollTop = 0; // Keep track of last scroll position
-const asideMenu = document.querySelector('.aside');
-
-// Function to handle scroll
-window.addEventListener('scroll', () => {
-    const currentScroll = window.scrollY;
-
-    // Check if the menu is open
-    if (asideMenu.classList.contains('open')) {
-        if (currentScroll > lastScrollTop) {
-            // Scrolling down
-            asideMenu.style.top = '-100%'; // Hide the menu
-        } else {
-            // Scrolling up
-            asideMenu.style.top = '50%'; // Show the menu
-        }
-    }
-
-    lastScrollTop = currentScroll; // Update last scroll position
-});
-
-// Optional: Toggle the menu
-const toggleButton = document.getElementById('toggle-button'); // Button to open/close menu
-
-toggleButton.addEventListener('click', () => {
-    asideMenu.classList.toggle('open'); // Toggle the open class
-    // If opening the menu, reset the position to show it
-    if (asideMenu.classList.contains('open')) {
-        asideMenu.style.top = '50%';
-    } else {
-        asideMenu.style.top = '-100%'; // Hide it if closed
-    }
-});
