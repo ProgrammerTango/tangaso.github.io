@@ -1200,27 +1200,27 @@ display: none;
   }
 /* Collapsible top-centered navigation for mobile */
 .aside {
-  position: fixed;
-  top: -70%; /* Initially hidden above the viewport */
-  left: 40%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust to truly center */
-  width: 250px; /* Width of the navigation */
-  height: 100vh; /* Full height */
-  z-index: 999;
-  transition: top 0.3s ease; /* Smooth transition */
-  margin-top: -60px;
+    position: fixed;
+    top: -100%; /* Initially hidden above the viewport */
+    left: 40%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to truly center */
+    width: 250px; /* Width of the navigation */
+    height: 70vh; /* Full height */
+    z-index: 999;
+    transition: top 0.3s ease; /* Smooth transition */
+    margin-top: -30%;
 }
 
 /* When the menu is active, show it */
 .aside.active {
-  top: 50%; /* Position in the middle of the viewport */
-  transform: translate(-50%, -50%); /* Center it vertically */
+    top: 50%; /* Position in the middle of the viewport */
+    transform: translate(-50%, -50%); /* Center it vertically */
 }
 
 /* Open class for clarity */
 .aside.open {
-  top: 50%; /* Slide in to the middle */
-  transform: translate(-50%, -50%); /* Center the menu */
+    top: 50%; /* Slide in to the middle */
+    transform: translate(-50%, -50%); /* Center the menu */
 }
 
 
