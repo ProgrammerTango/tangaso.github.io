@@ -1066,7 +1066,6 @@ display: none;
   }
 .menu-toggle {
   display: block;
-  top: 10px;
   left: 0; /* Start from the left edge */
   width: 100%; /* Cover the full width */
   position: fixed; /* Keep it fixed on the screen */
@@ -1077,10 +1076,10 @@ display: none;
   border-radius: 0; /* Remove rounded corners since it's full width */
   box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Optional: Add shadow */
   font-family: Arial, sans-serif; /* Font style */
-  font-size: 16px; /* Text size */
-  color: #333; /* Text color */
-  cursor: pointer; /* Add pointer cursor */
-  text-align: center; /* Center the text and icon */
+  font-size: 16px; 
+  color: #333;
+  cursor: pointer; 
+  text-align: center; 
 }
 
 /* Styling for the name "Dickson" */
