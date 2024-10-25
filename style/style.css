@@ -1064,17 +1064,6 @@ display: none;
     color: black;
     font-size: 15px;
   }
-  /* The aside menu is hidden by default */
-  .aside {
-    left: -250px;
-    transition: left 0.3s ease;
-  }
-  
-  /* When the menu is active, show it */
-  .aside.active {
-    left: 0;
-  }
-
 .menu-toggle {
   display: block;
   top: 10px;
@@ -1209,20 +1198,31 @@ display: none;
   .home .home-img img {
       width: 60%; /* Further resize for smaller screens */
   }
-  /* Collapsible aside navigation for mobile */
-  .aside {
-      position: fixed;
-      top: 0;
-      left: -250px; /* Initially hidden */
-      width: 250px;
-      height: 100vh;
-      z-index: 999;
-      transition: left 0.3s ease; /* Smooth slide-in transition */
-  }
+/* Collapsible top-centered navigation for mobile */
+.aside {
+  position: fixed;
+  top: -70%; /* Initially hidden above the viewport */
+  left: 40%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust to truly center */
+  width: 250px; /* Width of the navigation */
+  height: 100vh; /* Full height */
+  z-index: 999;
+  transition: top 0.3s ease; /* Smooth transition */
+  margin-top: -60px;
+}
 
-  .aside.open {
-      left: 0; /* Slide in when open */
-  }
+/* When the menu is active, show it */
+.aside.active {
+  top: 50%; /* Position in the middle of the viewport */
+  transform: translate(-50%, -50%); /* Center it vertically */
+}
+
+/* Open class for clarity */
+.aside.open {
+  top: 50%; /* Slide in to the middle */
+  transform: translate(-50%, -50%); /* Center the menu */
+}
+
 
   /* Mobile nav button */
   .nav-toggler {
