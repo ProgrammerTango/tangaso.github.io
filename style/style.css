@@ -328,27 +328,26 @@
 }
 
 /* Skills Section */
-.skills1-about .skills1-item-about h5,.skills-about .skills-item-about h5 {
-
+.skills-about .skills-item-about h5 {
   font-size: 16px;
   color: #333;
   margin-bottom: 10px;
 }
 
-.skills1-about .progress-about ,.skills-about .progress-about{
+.skills-about .progress-about {
   background-color: #ddd;
   border-radius: 30px;
   height: 10px;
   position: relative;
 }
 
-.skills1-about .progress-in-about, .skills-about .progress-in-about {
+.skills-about .progress-in-about {
   height: 100%;
   background-color: var(--skin-color);
   border-radius: 30px;
 }
 
-.skills1-about .skill-percent-about, .skills-about .skill-percent-about {
+.skills-about .skill-percent-about {
   position: absolute;
   right: 0;
   top: -25px;
@@ -519,26 +518,26 @@
       max-width: 40%;
       margin-top: 40px;
     }
-    .about .about-content .skills1 .skills1-items,.about .about-content .skills .skills-items{
+    .about .about-content .skills .skills-items{
       flex: 0 0 100%;
       max-width: 100%;
       margin-bottom: 20px;
     }
-    .about .about-content .skills1 .skills1-items h5, .about .about-content .skills .skills-items h5{
+    .about .about-content .skills .skills-items h5{
       line-height: 40px;
       font-weight: 600;
       font-size: 16px;
       color: var(--text-black-900);
       text-transform: capitalize;
     }
-    .about .about-content .skills1 .skills1-items .progress, .about .about-content .skills .skills-items .progress{
+    .about .about-content .skills .skills-items .progress{
       background-color: var(--bg-black-50);
       height: 7px;
       border-radius: 4px;
       width: 100%;
       position: relative;
     }
-    .about .about-content .skills1 .skills1-items .progress .progress-in, .about .about-content .skills .skills-items .progress .progress-in{
+    .about .about-content .skills .skills-items .progress .progress-in{
       position: absolute;
       left: 0;
       top: 0;
@@ -546,7 +545,7 @@
       border-radius: 4px;
       background-color: var(--skin-color);
     }
-    .about .about-content .skills1 .skills1-items .skill-percent,  .about .about-content .skills .skills-items .skill-percent{
+    .about .about-content .skills .skills-items .skill-percent{
       position: absolute;
       right: 0;
       color: var(--text-black-900);
@@ -1024,7 +1023,7 @@ display: none;
     grid-template-columns: repeat(1, 1fr); /* 3 columns */
     gap: 5px; /* Add space between items */
     margin-left: 10px;
-    width: 100%;
+    /* width: 100%; */
     background-color: red;
 }
 
