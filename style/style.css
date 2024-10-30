@@ -1017,6 +1017,8 @@ display: none;
       gap: 5px; /* Add space between items */
       margin-left: 0px;
       width: 150%;
+      background-color: red;
+      display: none;
   }
 
     .progress {
