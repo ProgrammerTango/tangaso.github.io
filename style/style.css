@@ -1011,6 +1011,18 @@ display: none;
     color:var(--skin-color)
 }
 
+  .skills .row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+      gap: 5px; /* Add space between items */
+      margin-left: 0px;
+      width: 150%;
+  }
+  .skills1 .row1 {
+    gap: 5px; /* Add space between items */
+    margin-left: 0px;
+    width: 150%;
+}
 
   .section-title h2 {
     margin-top: 0;   /* Remove default margin above */
