@@ -1011,13 +1011,13 @@ display: none;
     color:var(--skin-color)
 }
 
-  .skills .row {
+  /* .skills .row {
       display: grid;
       grid-template-columns: repeat(3, 1fr); /* 3 columns */
-      gap: 5px; /* Add space between items */
-      margin-left: 0px;
-      width: 150%;
-  }
+      /* gap: 5px; /* Add space between items */
+      /* margin-left: 0px; */
+      /* width: 150%; */ */
+  /* } */ */
 
     .progress {
         background-color: #ddd;
@@ -1135,9 +1135,7 @@ display: none;
 display: none;
 
 }
-.about .container {
-  padding: 10px;
-}
+
 
 
 .about .about-text h3 {
