@@ -715,11 +715,7 @@
       flex: 0 0 33.33%;
       max-width: 33.33%;
     }
-    .experience-service{
-      flex: 1;
-      min-width: 300px; /* Ensure sections don't collapse on smaller screens */
-      margin: 10px;
-    }
+
     .service .service-item .service-item-inner{
       background-color: var(--bg-black-100);
       border: 1px solid var(--bg-black-50);
@@ -1035,7 +1031,7 @@ display: none;
 }
 .about.section {
   margin-top: -270px; /* No margin above the section */
-  background-color: rgb(0, 60, 255);
+  background-color: red;
 }
 
   h3.my-profession{
