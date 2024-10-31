@@ -899,6 +899,13 @@
 .menu-toggle {
 display: none;
 }
+.skills .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+   gap: 5px;
+  margin-left: 10px; 
+  width: 220%;
+} 
     @media (max-width: 767px) {
       /* General section visibility */
       .section {
@@ -957,9 +964,14 @@ display: none;
     height: 0px;
   }
   .buttons .btn{
-    background:var(--skin-color);
-    margin-top: 46vh;
-    margin-left: 15vh;
+    margin-left: 10px;
+    margin-top: -20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border-radius: 40px;
+    white-space: nowrap;
+    background: var(--skin-color);
   }
   .contact-info-item {
     flex: 1 1 calc(50% - 30px); /* Two items per row with some margin */
@@ -1031,7 +1043,6 @@ display: none;
 }
 .about.section {
   margin-top: -270px; /* No margin above the section */
-  background-color: rgb(50, 5, 248);
 }
 
   h3.my-profession{
