@@ -1199,7 +1199,7 @@ display: none;
 .aside {
   position: fixed;
   top: -100%; /* Initially hidden above the viewport */
-  left: 40%; /* Center horizontally */
+  left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Adjust to truly center */
   width: 300px; /* Width of the navigation */
   height: 90vh; /* Full height */
