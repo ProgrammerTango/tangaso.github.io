@@ -952,7 +952,7 @@ display: none;
       }
     }
     /* Style the aside menu for small screens */
-@media (min-width: 991px) {
+@media (min-width: 105px) {
   .row .buttons {
     height: 0px;
   }
