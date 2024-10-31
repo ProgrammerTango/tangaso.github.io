@@ -97,8 +97,7 @@
     position: relative;
   }
   .btn{
-    margin-top: 30px;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
     padding: 12px 35px;
     color: white;
@@ -906,6 +905,61 @@ display: none;
   margin-left: 10px; 
   width: 220%;
 } 
+/* Floating Buttons Container */
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+/* WhatsApp and Top Button Styles */
+.whatsapp-button,
+.top-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25D366; /* WhatsApp green color */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  color: white; /* Icon color */
+  font-size: 24px; /* Icon size */
+}
+
+.top-button {
+  background-color: #333; /* Dark color for top button */
+}
+
+/* Hover Effect */
+.whatsapp-button:hover,
+.top-button:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Adjustments for Small Screens */
+@media (max-width: 768px) {
+  .floating-buttons {
+      bottom: 15px;
+      right: 15px;
+  }
+  
+  .whatsapp-button,
+  .top-button {
+      width: 45px;
+      height: 45px;
+  }
+  
+  .icon {
+      font-size: 20px;
+  }
+}
+
     @media (max-width: 767px) {
       /* General section visibility */
       .section {
@@ -959,14 +1013,13 @@ display: none;
       }
     }
     /* Style the aside menu for small screens */
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .row .buttons {
     height: 0px;
   }
   .buttons .btn{
-    margin-left: 10px;
     margin-top: -20px;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
     color: white;
     border-radius: 40px;

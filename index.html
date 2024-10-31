@@ -11,6 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,700;0,800;1,300;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -60,6 +62,19 @@
 
 <!--home-section-start-->
 <section class="home section active" id="home">
+    <!-- Floating Buttons Container -->
+<div class="floating-buttons">
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/254710704300" target="_blank" class="whatsapp-button" title="WhatsApp">
+        <i class="fab fa-whatsapp icon"></i> <!-- Font Awesome Icon -->
+    </a>
+    
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" class="top-button" title="Back to Top">
+        <i class="fas fa-arrow-up icon"></i> <!-- Font Awesome Icon -->
+    </button>
+</div>
+
     <i id="close1" class="fa fa-solid fa-bars" onclick="openmenu()"></i>
     <div class="container">
         <div class="row">
@@ -77,8 +92,8 @@
                 </div>                
              <a href="#contact" class="hire me" style="color: white">.</a>
              <a href="javascript:void(0);" class="hire-me" style=" margin-top: 30px;
-             font-size: 16px;
-             margin-top: -55px;
+             font-size: 12px;
+             margin-top: -5px;
              font-weight: 500;
              padding: 12px 35px;
              color: white;
