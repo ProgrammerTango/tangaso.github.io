@@ -945,8 +945,8 @@ display: none;
 /* Responsive Adjustments for Small Screens */
 @media (max-width: 768px) {
   .floating-buttons {
-      bottom: 35px;
-      right: 30px;
+      bottom: 40px;
+      right: 35px;
   }
   
   .whatsapp-button,
