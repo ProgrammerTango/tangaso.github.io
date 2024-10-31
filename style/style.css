@@ -999,14 +999,14 @@ display: none;
     color:var(--skin-color)
 }
 
-  /* .skills .row {
+    .skills .row {
       display: grid;
-      grid-template-columns: repeat(3, 1fr); /* 3 columns */
-      /* gap: 5px; /* Add space between items */
-      /* margin-left: 0px; */
-      /* width: 150%; */ */
-  /* } */ */
-/* 
+      grid-template-columns: repeat(1, 1fr); 
+     gap: 5px;
+      margin-left: 0px; 
+      width: 150%;
+  } 
+
     .progress {
         background-color: #e70101;
         border-radius: 5px;
@@ -1018,7 +1018,7 @@ display: none;
         height: 100%;
         background-color: #4caf50;
         border-radius: 5px;
-    } */
+    } 
 
   .section-title h2 {
     margin-top: 0;   /* Remove default margin above */
@@ -1031,7 +1031,7 @@ display: none;
 }
 .about.section {
   margin-top: -270px; /* No margin above the section */
-  background-color: rgb(248, 5, 5);
+  background-color: rgb(50, 5, 248);
 }
 
   h3.my-profession{
