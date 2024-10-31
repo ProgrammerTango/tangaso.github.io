@@ -952,7 +952,7 @@ display: none;
       }
     }
     /* Style the aside menu for small screens */
-@media (min-width: 105px) {
+@media (max-width: 400px) {
   .row .buttons {
     height: 0px;
   }
@@ -976,18 +976,6 @@ display: none;
   .contact-title, .contact-sub-title {
     margin: 0; /* Remove or reduce any top/bottom margin */
     margin-bottom: 120px;
-}
-
-  .personal-info1 {
-    background-color: #f0f4f8; /* Light background for contrast */
-    padding: 20px; /* Padding around the content */
-    border-radius: 10px; /* Smooth corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin-bottom: 20px; /* Space at the bottom */
-    max-width: 600px; /* Optional: Limit width for better readability */
-    margin: auto; /* Center the container horizontally */
-    margin-left: 50px;
-    margin-top: -190%;
 }
 
 .info-items1 {
@@ -1018,9 +1006,9 @@ display: none;
       /* margin-left: 0px; */
       /* width: 150%; */ */
   /* } */ */
-
+/* 
     .progress {
-        background-color: #ddd;
+        background-color: #e70101;
         border-radius: 5px;
         overflow: hidden;
         height: 10px;
@@ -1030,7 +1018,7 @@ display: none;
         height: 100%;
         background-color: #4caf50;
         border-radius: 5px;
-    }
+    } */
 
   .section-title h2 {
     margin-top: 0;   /* Remove default margin above */
@@ -1041,9 +1029,10 @@ display: none;
     color: var(--text-black-900);
     margin-left: 15px;
 }
-.about.section {
+/* .about.section {
   margin-top: -270px; /* No margin above the section */
-}
+  /* background-color: red;
+} */ */
 
   h3.my-profession{
     font-size: 15px;
@@ -1096,6 +1085,7 @@ display: none;
 }
   .main-content {
     padding-left: 0;
+    background-color: red;
   }
   .home .home-content {
     display: flex;
