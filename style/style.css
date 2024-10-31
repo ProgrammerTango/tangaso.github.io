@@ -373,14 +373,6 @@
   height: 100%;
 }
 
-.timeline-box-about {
-  background-color:  var(--bg-black-100)
-}
-
-.timeline-box1-about {
-  background-color: var(--bg-black-100)
-}
-
 @media screen and (max-width: 768px) {
   .education-about, .experience-about {
     flex-basis: 100%;
@@ -401,16 +393,14 @@
   padding-left: 40px;
   position: relative;
   background-color: var(--bg-black-100);
+  margin-top: 20px;
   
   /* Shadow Effect */
-  box-shadow: 0 4px 8px rgba(1, 0, 0, 2.0); /* Adjust values as needed */
-  border-radius: 8px; /* Optional: adds rounded corners */
-  transition: box-shadow 0.3s ease; /* Optional: smooth transition on hover */
+  box-shadow: 0 1px 1px rgba(1, 0, 0, 2.0); /* Adjust values as needed */
+  border-radius: 19px; /* Optional: adds rounded corners */
 }
 
-.timeline-item-about:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
-}
+
 
 
 .timeline-date-about {
