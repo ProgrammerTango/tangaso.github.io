@@ -1109,7 +1109,7 @@ display: none;
   }
   .menu-toggle {
     display: block;
-    width: 75%; /* Adjust as needed */
+    width: 100%; /* Adjust as needed */
     position: fixed;
     z-index: 1000;
     color: var(--skin-color);
