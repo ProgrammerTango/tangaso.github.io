@@ -1107,30 +1107,26 @@ display: none;
     color: black;
     font-size: 15px;
   }
-.menu-toggle {
-  display: block;
-  left: 0; /* Start from the left edge */
-  width: 100%; /* Cover the full width */
-  position: fixed; /* Keep it fixed on the screen */
-  z-index: 1000; /* Ensure it's above other elements */
-  color: var(--skin-color);
-  background-color:var(--bg-black-900); /* Background color */
-  padding: 10px 15px; /* Add padding for spacing */
-  border-radius: 0; /* Remove rounded corners since it's full width */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Optional: Add shadow */
-  font-family: Arial, sans-serif; /* Font style */
-  font-size: 16px; 
-  color: #333;
-  cursor: pointer; 
-  text-align: center; 
-}
-
-/* Styling for the name "Dickson" */
-.menu-name {
-  font-weight: bold; /* Make it bold */
-  margin-left: -200px; /* Add some space between the name and the icon */
-}
-
+  .menu-toggle {
+    display: block;
+    width: 75%; /* Adjust as needed */
+    position: fixed;
+    z-index: 1000;
+    color: var(--skin-color);
+    background-color: rgba(255, 255, 255, 0.7); /* White with 70% opacity */
+    padding: 10px 15px;
+    border-radius: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    text-align: center;
+    height: 35px;
+    top: 0px;
+  }
+  
+  
 /* Styling for the hamburger menu icon */
 .menu-icon {
   color:var(--skin-color);
