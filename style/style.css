@@ -1116,7 +1116,7 @@ display: none;
     position: fixed;
     z-index: 1000;
     color: var(--skin-color);
-    background-color: var(--bg-black-900)
+    background-color: var(--bg-black-900);
     padding: 10px 15px;
     border-radius: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
