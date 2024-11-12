@@ -1114,7 +1114,6 @@ display: none;
     align-items: center; /* Center vertically */
     width: 100%; /* Ensure full width if needed */
     position: fixed;
-    z-index: 1000;
     color: var(--skin-color);
     background-color: var(--bg-black-900);
     padding: 10px 15px;
