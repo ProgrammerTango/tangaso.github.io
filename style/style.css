@@ -66,7 +66,6 @@
   }
   .section-title h2{
     font-size: 40px;
-    color: var(--text-black-900);
     font-weight: 700;
     position: relative;
   }
@@ -366,6 +365,7 @@
   flex: 1;
   min-width: 300px; /* Ensure sections don't collapse on smaller screens */
   margin: 10px;
+  background-color: var(--bg-black-900);
 }
 
 .timeline-box-about, .timeline-box1-about {
@@ -1105,7 +1105,6 @@ display: none;
     text-align: justify; /* Optional: ensures the text stretches across the width */
     margin: 0;
     padding: 0;
-    color: black;
     font-size: 15px;
   }
   .menu-toggle {
