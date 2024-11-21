@@ -363,8 +363,6 @@
 
 .education-about, .experience-about {
   flex: 1;
-  min-width: 300px;
-  max-width: 90%;
   margin-left: 20%;
   background-color: var(--bg-black-900);
 }
@@ -378,7 +376,7 @@
 @media screen and (max-width: 768px) {
   .education-about, .experience-about {
     flex-basis: 100%;
-    margin: 10px 0;
+    width: 120%;
   }
 
   .timeline-box-about, .timeline-box1-about {
