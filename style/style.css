@@ -919,6 +919,14 @@ display: none;
 
     /* Style the aside menu for small screens */
 @media (max-width: 767px) {
+
+  .about .about-content .skills .skills-items .progress{
+    background-color: var(--bg-black-50);
+    height: 7px;
+    border-radius: 4px;
+    width: 30%;
+    position: relative;
+  }
   .padd-15 {
     width: 100%;
     max-width: 100%;
@@ -1075,17 +1083,13 @@ display: none;
         height: 10px;
     }
 
-    .progress-in {
-        height: 100%;
-        background-color: #4caf50;
-        border-radius: 5px;
-    } 
+
 
   .section-title h2 {
     margin-top: 0;   /* Remove default margin above */
     padding-top: 0;  /* Remove padding above */
-    margin-bottom: 10px; /* You can adjust this value for space below the heading */
-    line-height: 1.2;  /* Adjust line-height to fit content better */
+    margin-bottom: 10px; 
+    line-height: 1.2;  
     font-size: 1.8rem;
     color: var(--text-black-900);
     margin-left: 15px;
@@ -1208,13 +1212,9 @@ display: none;
   height: 10px;
 }
 
-.progress-in {
-  height: 10px;
-}
 
-.skill-percent {
-  font-size: 0.8rem;
-}
+
+
 .aside {
   position: fixed;
   top: -100%; /* Initially hidden above the viewport */
