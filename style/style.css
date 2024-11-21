@@ -372,19 +372,6 @@
   margin-bottom: 20px;
   height: 100%;
 }
-
-@media screen and (max-width: 768px) {
-  .education-about, .experience-about {
-    flex-basis: 100%;
-    width: 100%;
-  }
-
-  .timeline-box-about, .timeline-box1-about {
-    width: 100%;
-  }
-}
-
-
 .timeline-item-about {
   padding-left: 40px;
   position: relative;
@@ -928,80 +915,77 @@ display: none;
   transform: scale(1.1);
 }
 
-/* Responsive Adjustments for Small Screens */
-@media (max-width: 768px) {
-  .floating-buttons {
-      bottom: 40px;
-      right: 35px;
-  }
-  
-  .whatsapp-button,
-  .top-button {
-      width: 45px;
-      height: 45px;
-  }
-  
-  .icon {
-      font-size: 20px;
-  }
-}
-
-    @media (max-width: 767px) {
-      /* General section visibility */
-      .section {
-          display: block; /* Ensure all sections are displayed */
-          opacity: 1; /* Ensure visibility */
-          transform: none; /* Remove any transform to keep elements in place */
-      }
-  
-      /* Specific to each section to fix any display issues */
-      #services, #portfolio, #about, #contact {
-          display: block;
-      }
-            #services, #portfolio{
-              display: block;
-          }
-  
-      /* Fly-in effect on scroll for small screens */
-      .section-title, .contact-title, .contact-sub-title, .contact-info-item, 
-      .form-item, .about-text, .info-items1, .skills-items, .timeline-item-about, 
-      .service-item, .portfolio-item {
-          opacity: 0; /* Initially hidden */
-          transform: translateY(50px); /* Positioned below initially */
-          transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth fly-in transition */
-      }
-      .timeline-item-about{
-        width: 93%;
-        margin-left: 10px;
-      }
-      /* Fly-in effect when the element comes into view */
-      .fly-in {
-          opacity: 1; /* Fully visible when in view */
-          transform: translateY(0); /* Reset position */
-      }
-  
-      /* Portfolio items adjustments */
-      .portfolio-item {
-          display: block;
-          margin-bottom: 20px; /* Add spacing between items */
-      }
-  
-      /* Service items adjustments */
-      .service-item {
-          display: block;
-          margin-bottom: 20px; /* Add spacing between items */
-      }
-  }
-  
-
-    @media (min-width: 992px) {
-      .aside {
-        left: 0;
-        position: fixed;
-      }
-    }
     /* Style the aside menu for small screens */
 @media (max-width: 767px) {
+  .timeline-box-about, .timeline-box1-about {
+    width: 100%;
+  }
+  .floating-buttons {
+    bottom: 40px;
+    right: 35px;
+}
+
+.whatsapp-button,
+.top-button {
+    width: 45px;
+    height: 45px;
+}
+
+.icon {
+    font-size: 20px;
+}
+    /* General section visibility */
+    .section {
+      display: block; /* Ensure all sections are displayed */
+      opacity: 1; /* Ensure visibility */
+      transform: none; /* Remove any transform to keep elements in place */
+  }
+
+  /* Specific to each section to fix any display issues */
+  #services, #portfolio, #about, #contact {
+      display: block;
+  }
+        #services, #portfolio{
+          display: block;
+      }
+
+  /* Fly-in effect on scroll for small screens */
+  .section-title, .contact-title, .contact-sub-title, .contact-info-item, 
+  .form-item, .about-text, .info-items1, .skills-items, .timeline-item-about, 
+  .service-item, .portfolio-item {
+      opacity: 0; /* Initially hidden */
+      transform: translateY(50px); /* Positioned below initially */
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth fly-in transition */
+  }
+  .timeline-item-about{
+    width: 93%;
+    margin-left: 10px;
+  }
+  /* Fly-in effect when the element comes into view */
+  .fly-in {
+      opacity: 1; /* Fully visible when in view */
+      transform: translateY(0); /* Reset position */
+  }
+
+  /* Portfolio items adjustments */
+  .portfolio-item {
+      display: block;
+      margin-bottom: 20px; /* Add spacing between items */
+  }
+
+  /* Service items adjustments */
+  .service-item {
+      display: block;
+      margin-bottom: 20px; /* Add spacing between items */
+  }
+  .aside {
+    left: 0;
+    position: fixed;
+  }
+  .education-about, .experience-about {
+    flex-basis: 100%;
+    width: 100%;
+  }
   .row .buttons {
     height: 0px;
   }
@@ -1207,25 +1191,6 @@ display: none;
 .skill-percent {
   font-size: 0.8rem;
 }
-}
-
-
-/* Larger screens */
-
-    /* Small screen adjustments */
-@media (max-width: 575px) {
-    .home .home-content {
-      padding: 10px; /* Reduce padding for smaller screens */
-  }
-
-  .home .home-info h1 {
-      font-size: 24px; /* Adjust font size for smaller screens */
-  }
-
-  .home .home-img img {
-      width: 60%; /* Further resize for smaller screens */
-  }
-/* Collapsible top-centered navigation for mobile */
 .aside {
   position: fixed;
   top: -100%; /* Initially hidden above the viewport */
@@ -1242,53 +1207,64 @@ display: none;
   border-radius: 28px; /* Optional: rounded corners */
 } 
 
+.home .home-content {
+  padding: 10px; 
+}
+
+.home .home-info h1 {
+  font-size: 24px; 
+}
+
+.home .home-img img {
+  width: 60%; 
+}
+
+
 /* When the menu is active, show it */
 .aside.active {
-  top: 50%; /* Position in the middle of the viewport */
-  transform: translate(-50%, -50%); /* Center it vertically */
+top: 50%; /* Position in the middle of the viewport */
+transform: translate(-50%, -50%); /* Center it vertically */
 }
 
 /* Open class for clarity */
 .aside.open {
-  top: 50%; /* Slide in to the middle */
-  transform: translate(-50%, -50%); /* Center the menu */
+top: 50%; /* Slide in to the middle */
+transform: translate(-50%, -50%); /* Center the menu */
 }
-
-
 
   /* Mobile nav button */
   .nav-toggler {
-      display: block;
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      z-index: 1000;
-      cursor: pointer;
-  }
-
-  /* Adjust sections to be full width */
-  .section {
-      padding: 10px;
-  }
-
-  /* Contact form and portfolio items adjust to full width */
-  .contact .contact-info-item, .portfolio .portfolio-item, .service .service-item {
-      flex: 0 0 100%;
-      max-width: 100%;
-  }
-
-  .hidden {
-      display: none !important;
-  }
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
 }
 
-/* Even smaller screens adjustments */
-@media (max-width: 575px) {
-  .contact .contact-form .col-6, .contact .contact-info-item,
-  .portfolio .portfolio-item, .service .service-item {
-      flex: 0 0 100%;
-      max-width: 100%;
-  }
+/* Adjust sections to be full width */
+.section {
+    padding: 10px;
 }
+
+/* Contact form and portfolio items adjust to full width */
+.contact .contact-info-item, .portfolio .portfolio-item, .service .service-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.contact .contact-form .col-6, .contact .contact-info-item,
+.portfolio .portfolio-item, .service .service-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+}
+
+
 
 
