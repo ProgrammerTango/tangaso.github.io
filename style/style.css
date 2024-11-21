@@ -917,20 +917,21 @@ display: none;
 
     /* Style the aside menu for small screens */
 @media (max-width: 767px) {
-  .padd-15{
+  /* .padd-15{
     width: 100%; 
     max-width: 100%;
     padding: 0; 
     margin: 0 auto;
+    background-color: red;
     margin-left: 1%;
   }
   .main-container {
     width: 100%; 
-    max-width: 400%;
+    max-width: 00%;
     padding: 0; 
     margin: 0 auto;
     background-color: rgb(0, 255, 85);
-}
+} */
   .timeline-box-about, .timeline-box1-about {
     width: 100%;
   }
