@@ -916,7 +916,7 @@ display: none;
 }
 
     /* Style the aside menu for small screens */
-@media (max-width: 767px) {
+@media (max-width: 467px) {
   .timeline-box-about, .timeline-box1-about {
     width: 100%;
   }
@@ -1264,6 +1264,7 @@ transform: translate(-50%, -50%); /* Center the menu */
 }
 
 }
+
 
 
 
