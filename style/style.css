@@ -376,7 +376,7 @@
 @media screen and (max-width: 768px) {
   .education-about, .experience-about {
     flex-basis: 100%;
-    width: 120%;
+    width: 100%;
   }
 
   .timeline-box-about, .timeline-box1-about {
@@ -1021,7 +1021,7 @@ display: none;
 
 
   .copyright {
-    width: 99vw; /* Ensure full width on smaller screens */
+    width: 100%; /* Ensure full width on smaller screens */
     border-radius: 10; /* Remove rounded corners for full-width effect */
     margin-left: 0; /* Ensure no margin */
     margin-right: 0; /* Ensure no margin */
@@ -1107,9 +1107,7 @@ display: none;
   .menu-toggle {
     display: flex;
     justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    width: 100%; /* Ensure full width if needed */
-    position: fixed;
+    align-items: center;
     color: var(--skin-color);
     background-color: var(--bg-black-900);
     padding: 10px 15px;
@@ -1119,7 +1117,6 @@ display: none;
     font-size: 16px;
     height: 35px;
     top: 0;
-    margin-left: -10px;
 }
 
 .menu-icon {
