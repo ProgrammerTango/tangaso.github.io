@@ -923,6 +923,7 @@ display: none;
     padding: 0; 
     margin: 0 auto;
     background-color: red;
+    margin-left: 1%;
   }
   .main-container {
     width: 100%; 
