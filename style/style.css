@@ -1096,7 +1096,7 @@ display: none;
     margin-left: 15px;
 }
 .about.section {
-  margin-top: -270px; /* No margin above the section */
+  margin-top: -62vh; 
 }
 
   h3.my-profession{
@@ -1173,9 +1173,10 @@ display: none;
     border-radius: 50%; /* Optional for circular image */
 }
 .section {
-  width: 100%; /* Adjust width to 90% of the screen */
-  max-width: 500px; /* Ensure the section doesn't exceed 460px */
-  margin: 0 auto; /* Center the section horizontally */
+  width: 100%; 
+  max-width: 500px; 
+  margin: 0 auto; 
+  padding: 10px;
 }
 .home-img::after {
 display: none;
@@ -1274,10 +1275,7 @@ transform: translate(-50%, -50%); /* Center the menu */
     cursor: pointer;
 }
 
-/* Adjust sections to be full width */
-.section {
-    padding: 10px;
-}
+
 
 /* Contact form and portfolio items adjust to full width */
 .contact .contact-info-item, .portfolio .portfolio-item, .service .service-item {
