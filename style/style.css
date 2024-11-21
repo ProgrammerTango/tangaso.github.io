@@ -485,11 +485,13 @@
       margin-right: 15px;
       margin-top: 10px;
     }
-    .about .about-content .skills{
+    .about .about-content .skills {
       flex: 0 0 40%;
       max-width: 40%;
       margin-top: 40px;
-    }
+      min-width: 200px; /* Ensure it doesn't collapse too much */
+      overflow: visible; /* Prevent clipping */
+  }
     .about .about-content .skills .skills-items{
       flex: 0 0 100%;
       max-width: 100%;
@@ -925,7 +927,11 @@ display: none;
     padding-left: 15px;
     padding-right: 15px;
 }
-
+.about .about-content .skills {
+  flex: 0 0 100%; /* Allow it to take full width */
+  max-width: 100%;
+  margin-top: 20px; /* Adjust margin for smaller screens */
+}
 .main-container {
     width: 100%;
     max-width: 100%; /* Correcting the typo: should not be 00% */
