@@ -937,9 +937,9 @@ display: none;
     /* background-color: red; */
 }
 .about .about-content .skills {
-  flex: 0 0 100%; /* Allow it to take full width */
+  flex: 0 0 100%; 
   max-width: 100%;
-  margin-top: 20px; /* Adjust margin for smaller screens */
+  margin-top: 20px; 
 }
 .main-container {
     width: 100%;
@@ -1129,8 +1129,15 @@ display: none;
     font-family: Arial, sans-serif;
     font-size: 16px;
     height: 35px;
-    top: 0;
+    position: fixed; /* Fixed positioning */
+    top: 0; /* Keep it at the top of the page */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Offset the center to true middle */
+    z-index: 9999; /* Ensure it stays on top of other elements */
+    width: 100%; /* Adjust width if needed */
+    margin: 0;
 }
+
 
 .menu-icon {
     color: var(--skin-color);
