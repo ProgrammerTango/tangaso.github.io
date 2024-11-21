@@ -917,13 +917,21 @@ display: none;
 
     /* Style the aside menu for small screens */
 @media (max-width: 767px) {
-  .main-container {
-    width: 100%; 
+  .padd-15 {
+    width: 100%;
     max-width: 100%;
-    padding: 0; 
-    margin: 0 auto;
-    background-color: red;
+    padding: 0;
+    margin: 0 auto; /* Center the container like .main-container */
 }
+
+.main-container {
+    width: 100%;
+    max-width: 100%; /* Correcting the typo: should not be 00% */
+    padding: 0;
+    margin: 0 auto; /* Center the container */
+}
+
+
   .timeline-box-about, .timeline-box1-about {
     width: 100%;
   }
