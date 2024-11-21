@@ -943,17 +943,13 @@ display: none;
 }
 .main-container {
     width: 100%;
-    max-width: 100%; 
+    max-width: 1100px; 
     padding: 0;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
 }
-.container{
-  max-width: 1100px;
-  width: 100%;
-  margin: auto;
-}
+
   .timeline-box-about, .timeline-box1-about {
     width: 100%;
   }
