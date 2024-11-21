@@ -954,7 +954,7 @@ display: none;
   }
   .floating-buttons {
     bottom: 40px;
-    right: 60px;
+    right: 55%;
 }
 
 .whatsapp-button,
