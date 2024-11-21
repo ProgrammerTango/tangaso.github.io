@@ -363,8 +363,9 @@
 
 .education-about, .experience-about {
   flex: 1;
-  min-width: 300px; /* Ensure sections don't collapse on smaller screens */
-  margin: 10px;
+  min-width: 300px;
+  max-width: 90%;
+  margin-left: 20%;
   background-color: var(--bg-black-900);
 }
 
@@ -385,10 +386,6 @@
   }
 }
 
-.timeline-about {
-  position: relative;
-  padding-left: 0;
-}
 
 .timeline-item-about {
   padding-left: 40px;
@@ -965,7 +962,6 @@ display: none;
       }
             #services, #portfolio{
               display: block;
-              margin-left: 20px;
           }
   
       /* Fly-in effect on scroll for small screens */
@@ -976,7 +972,10 @@ display: none;
           transform: translateY(50px); /* Positioned below initially */
           transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth fly-in transition */
       }
-  
+      .timeline-item-about{
+        width: 93%;
+        margin-left: 10px;
+      }
       /* Fly-in effect when the element comes into view */
       .fly-in {
           opacity: 1; /* Fully visible when in view */
