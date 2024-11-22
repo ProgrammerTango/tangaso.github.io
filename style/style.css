@@ -957,6 +957,61 @@ display: none;
   margin-top: 20px; /* Adjust top margin */
   flex-wrap: nowrap; /* Prevent wrapping */
 }
+/* Portfolio Item Styles */
+.portfolio-item {
+  margin-bottom: 30px; /* Space between portfolio items */
+}
+
+.portfolio-item-inner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px; /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.portfolio-item-inner:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect on hover */
+}
+
+.portfolio-img {
+  position: relative;
+}
+
+.portfolio-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Match rounded corners of the container */
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-img a {
+  display: block;
+  text-decoration: none; /* Remove underline from link */
+}
+
+.portfolio-img:hover img {
+  opacity: 0.8; /* Slight opacity change on hover */
+}
+
+/* Portfolio Title Styling */
+.portfolio-title {
+  position: absolute;
+  bottom: 15px; /* Positioned at the bottom */
+  left: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-title {
+  opacity: 1; /* Show title on hover */
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background when hovered */
+}
 
 .btn-contact,
 .btn-cv {
