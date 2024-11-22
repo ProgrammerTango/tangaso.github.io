@@ -741,7 +741,7 @@
       width: 100%;
       margin-bottom: 40px;
     }
-    .portfolio .portfolio-heading h2{
+    .portfolio .portfolio-heading h2, .about .row h2{
       color: var(--text-black-900);
       font-weight: 500;
     }
@@ -911,6 +911,48 @@ display: none;
 .whatsapp-button:hover,
 .top-button:hover {
   transform: scale(1.1);
+}
+.button-container {
+  display: flex;
+  justify-content: flex-start; /* Align buttons to the left */
+  gap: 10px; /* Space between buttons */
+  margin-top: 20px; /* Adjust top margin */
+  flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.btn-contact,
+.btn-cv {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none; /* Remove underline */
+  background: var(--skin-color);
+  transition: background 0.3s ease;
+  display: inline-block;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.btn-contact:hover,
+.btn-cv:hover {
+  background: darken(var(--skin-color), 10%); /* Slightly darken on hover */
+}
+
+/* Media Query for Small Screens (Phones) */
+@media screen and (max-width: 480px) {
+  .button-container {
+      justify-content: center; /* Center buttons for very small screens */
+      gap: 5px; /* Reduce spacing between buttons */
+      margin-top: -90px; /* Reduce top margin */
+      margin-left: 90px;
+  }
+
+  .btn-contact,
+  .btn-cv {
+      padding: 8px 16px; /* Reduce padding */
+      font-size: 12px; /* Reduce font size */
+  }
 }
 
     /* Style the aside menu for small screens */
@@ -1094,6 +1136,9 @@ display: none;
     font-size: 1.8rem;
     color: var(--text-black-900);
     margin-left: 15px;
+}
+#services .section-title h2, #portfolio .section-title h2{
+  margin-top: 80px;
 }
 .about.section {
   margin-top: -62vh; 
