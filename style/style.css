@@ -54,15 +54,21 @@
     padding-top: 60px;
     padding-bottom: 70px;
   }
-  .section-title{
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 30px;
-    margin-top: -60px;
-  }
+  .section-title {
+    width: 100%; /* Ensure it spans the full width */
+    margin-bottom: 40px; /* Balanced spacing below */
+    text-align: center; /* Center-align the title */
+    font-size: 24px; /* A slightly larger font for prominence */
+    font-weight: 700; /* Make the title stand out */
+    color: var(--text-black-900); /* Consistent color with other headings */
+    letter-spacing: 1px; /* Subtle spacing for a polished look */
+    text-transform: uppercase; /* Add emphasis by making it uppercase */
+    line-height: 1.5; /* Ensure readability for multi-line titles */
+    border-bottom: 2px solid var(--skin-color); /* Underline effect for better focus */
+    padding-bottom: 10px; /* Spacing to separate the underline */
+}
+
   .section-title h2{
-    font-size: 40px;
-    font-weight: 700;
     position: relative;
   }
   .section-title h2::before{
@@ -73,6 +79,9 @@
     position: absolute;
     top: 100%;
     left: 0;
+    bottom: -15px;
+    left: 50%; 
+    transform: translateX(-50%);
   }
   .section-title h2::after{
     content:'';
@@ -83,7 +92,9 @@
     top: 100%;
     left: 0;
     margin-top: 8px;
-
+    bottom: -15px; 
+    left: 50%; 
+    transform: translateX(-50%);
   }
   .row{
     display: flex;
@@ -256,11 +267,17 @@
   .typing{
     color: var(--skin-color);
   }
-  .home-info p{
-    margin-bottom: 70px;
-    font-size: 20px;
-    color: var(--text-black-700);
-  }
+  .home-info p {
+    font-size: 18px; /* Uniform font size with other text elements */
+    line-height: 1.8; /* Consistent line spacing for readability */
+    color: var(--text-black-800); 
+    text-align: justify; /* Align text neatly */
+    margin-bottom: 30px; /* Adjusted spacing for a balanced layout */
+    letter-spacing: 0.5px; /* Slight spacing for modern aesthetics */
+    padding: 5px 10px; /* Subtle padding for structure */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
   .home .home-img{
     flex: 0 0 40%;
     max-width: 40%;
@@ -446,11 +463,21 @@
   .about .about-content .about-text h3 span{
     color: var(--skin-color);
     }
-    .about .about-content .about-text p{
-      font-size: 16px;
-      line-height: 25px;
-      color: var(--text-black-700);
-    }
+    .about .about-content .about-text p {
+      font-size: 18px; 
+      line-height: 1.8; 
+      color: var(--text-black-800); 
+      text-align: justify; 
+      margin-bottom: 15px;
+      letter-spacing: 0.5px; 
+      padding: 5px 10px; 
+      transition: color 0.3s ease; 
+  }
+  
+  .home-info p:hover , .about .about-content .about-text p:hover {
+      color: var(--skin-color); 
+  }
+  
 
     .about .about-content .personal-info{
       flex: 0 0 60%;
@@ -493,13 +520,18 @@
       max-width: 100%;
       margin-bottom: 20px;
     }
-    .about .about-content .skills .skills-items h5{
-      line-height: 40px;
-      font-weight: 600;
-      font-size: 16px;
+    .about .about-content .skills .skills-items h5 {
+      line-height: 1.5;
+      font-weight: 700; 
+      font-size: 18px; 
       color: var(--text-black-900);
       text-transform: capitalize;
-    }
+      margin-bottom: 10px;
+      letter-spacing: 0.5px; 
+      border-left: 4px solid var(--skin-color); 
+      padding-left: 12px; 
+      transition: color 0.3s ease, border-left-color 0.3s ease;
+  }
     .about .about-content .skills .skills-items .progress{
       background-color: var(--bg-black-50);
       height: 7px;
@@ -741,10 +773,7 @@
       width: 100%;
       margin-bottom: 40px;
     }
-    .portfolio .portfolio-heading h2, .about .row h2{
-      color: var(--text-black-900);
-      font-weight: 500;
-    }
+
     .portfolio .portfolio-item{
       flex: 0 0 50%;
       max-width: 50%;
@@ -959,7 +988,7 @@ display: none;
 @media (max-width: 767px) {
   .about .about-content .skills .skills-items{
     flex: 0 0 100%;
-    width: 40%;
+    width: 100%;
     margin-bottom: 20px;
   }
   .about .about-content .skills .skills-items .progress{
@@ -1137,9 +1166,7 @@ display: none;
     color: var(--text-black-900);
     margin-left: 15px;
 }
-#services .section-title h2, #portfolio .section-title h2{
-  margin-top: 80px;
-}
+
 .about.section {
   margin-top: -62vh; 
 }
