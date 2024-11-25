@@ -974,25 +974,6 @@ display: none;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect on hover */
 }
 
-.portfolio-img {
-  position: relative;
-}
-
-.portfolio-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px; /* Match rounded corners of the container */
-  transition: opacity 0.3s ease;
-}
-
-.portfolio-img a {
-  display: block;
-  text-decoration: none; /* Remove underline from link */
-}
-
-.portfolio-img:hover img {
-  opacity: 0.8; /* Slight opacity change on hover */
-}
 
 /* Portfolio Title Styling */
 .portfolio-title {
@@ -1316,6 +1297,8 @@ display: none;
     width: 50%; /* Resize the image for smaller screens */
     height: auto;
     border-radius: 50%; /* Optional for circular image */
+    margin-top: 32vh;
+    margin-left: -50vh;
 }
 .section {
   width: 100%; 
