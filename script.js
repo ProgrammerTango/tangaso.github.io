@@ -148,3 +148,21 @@ function scrollToTop() {
 }
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    const contactBtn = document.querySelector('.btn-contact');
+    const cvBtn = document.querySelector('.btn-cv');
+
+    contactBtn.addEventListener('click', () => {
+        console.log('Contact button clicked');
+        document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    cvBtn.addEventListener('click', () => {
+        console.log('CV button clicked');
+        window.location.href = 'path/to/your-cv.pdf';
+    });
+
+    // Add touch event listeners
+    contactBtn.addEventListener('touchstart', () => console.log('Contact button touched'));
+    cvBtn.addEventListener('touchstart', () => console.log('CV button touched'));
+});

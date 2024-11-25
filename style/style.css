@@ -466,12 +466,17 @@
     .about .about-content .about-text p {
       font-size: 18px; 
       line-height: 1.8; 
-      color: var(--text-black-800); 
       text-align: justify; 
       margin-bottom: 15px;
       letter-spacing: 0.5px; 
       padding: 5px 10px; 
       transition: color 0.3s ease; 
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-height: calc(1.5em * 4); /* Adjust max-height to match the number of visible lines */
+      transition: max-height 0.3s ease;
   }
   
   .home-info p:hover , .about .about-content .about-text p:hover {
@@ -1008,26 +1013,43 @@ display: none;
   white-space: nowrap; /* Prevent text wrapping */
 }
 
-.btn-contact:hover,
-.btn-cv:hover {
-  background: darken(var(--skin-color), 10%); /* Slightly darken on hover */
+.btn-contact,
+.btn-cv {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    background: var(--skin-color);
+    transition: background 0.3s ease;
+    display: inline-block;
+    cursor: pointer;
+    white-space: nowrap;
+    position: relative;
+    z-index: 10;
 }
 
-/* Media Query for Small Screens (Phones) */
 @media screen and (max-width: 480px) {
-  .button-container {
-      justify-content: center; /* Center buttons for very small screens */
-      gap: 5px; /* Reduce spacing between buttons */
-      margin-top: -90px; /* Reduce top margin */
-      margin-left: 90px;
-  }
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: -110px;
+    }
 
-  .btn-contact,
-  .btn-cv {
-      padding: 8px 16px; /* Reduce padding */
-      font-size: 12px; /* Reduce font size */
-  }
+    .btn-contact,
+    .btn-cv {
+        padding: 8px 16px;
+        font-size: 12px;
+        width: auto;
+        display: block;
+    }
 }
+
+
 
     /* Style the aside menu for small screens */
 @media (max-width: 767px) {
