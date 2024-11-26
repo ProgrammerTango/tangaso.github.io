@@ -142,7 +142,7 @@ body.dark {
   }
   .aside .logo{
     position: absolute;
-    top: 50px;
+    top: 90px;
     font-size: 30px;
     text-transform: capitalize;
   }
@@ -247,16 +247,8 @@ body.dark {
 /* Default styling for small screens */
 .home .home-info {
   flex: 1 1 auto; /* Ensures it adjusts naturally */
-  max-width: 100%; /* Restrict content to the container's width */
-  box-sizing: border-box; /* Include padding and border in width calculation */
-}
-
-/* Styling for large screens */
-@media (max-width: 767px){ /* Adjust breakpoint if necessary */
-  .home .home-info {
-      flex: 0 0 60%; /* Restrict the flex item size to 60% */
-      max-width: 160%; /* Expand maximum width for large screens */
-  }
+  max-width: 100%; 
+  box-sizing: border-box; 
 }
 
   h3.hello{
@@ -527,8 +519,8 @@ body.dark {
       flex: 0 0 40%;
       max-width: 40%;
       margin-top: 40px;
-      min-width: 200px; /* Ensure it doesn't collapse too much */
-      overflow: visible; /* Prevent clipping */
+      min-width: 200px; 
+      overflow: visible; 
   }
     .about .about-content .skills .skills-items{
       flex: 0 0 100%;
@@ -978,6 +970,7 @@ display: none;
   left: 15px;
   font-size: 18px;
   font-weight: 600;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, sans-serif;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
   padding: 5px 10px;
@@ -1008,25 +1001,24 @@ display: none;
 
 @media (max-width: 767px) {
   .button-container {
-      display: flex; /* Horizontal alignment */
-      justify-content: flex-end; /* Align buttons to the right */
-      gap: 10px; /* Add spacing between buttons */
-      flex-wrap: nowrap; /* Prevent wrapping */
-      margin-top: -90px; /* Move the buttons upwards */
-      position: relative; /* Ensure the container remains within its section */
-  }
-
-  .btn-contact,
-  .btn-cv {
-      padding: 8px 16px;
-      font-size: 12px;
-      width: auto;
-  }
+    display: flex; /* Horizontal alignment */
+    justify-content: flex-end; /* Align buttons to the right */
+    gap: 10px; /* Add spacing between buttons */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    margin-top: -90px; /* Move the buttons upwards */
+    position: relative; /* Ensure the container remains within its section */
 }
 
-
-
-@media (max-width: 767px) {
+.btn-contact,
+.btn-cv {
+    padding: 8px 16px;
+    font-size: 12px;
+    width: auto;
+}
+  .home .home-info {
+    flex: 0 0 60%; /* Restrict the flex item size to 60% */
+    max-width: 160%; /* Expand maximum width for large screens */
+}
   .about .about-content .about-text p {
     width: 100%;
     max-width: 100%;
