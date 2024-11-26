@@ -1240,8 +1240,8 @@ display: none;
     max-width: 100%;
     box-sizing: border-box;
     word-wrap: break-word;
-    text-align: justify; /* Optional: ensures the text stretches across the width */
-    margin-left: 150px;
+    text-align: justify;
+    margin-left: 0; /* Adjusted to ensure it fits smaller screens */
     padding: 0;
     font-size: 15px;
   }
