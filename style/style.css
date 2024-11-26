@@ -1016,6 +1016,26 @@ display: none;
 }
 
 
+/* Base styles for the service description */
+.service-description {
+  width: 100%; /* Ensures full width within its container */
+  box-sizing: border-box; /* Includes padding and border in total width */
+  word-wrap: break-word; /* Prevents overflow for long words */
+  text-align: justify; /* Aligns text evenly */
+  font-size: 16px; /* Default font size */
+  margin: 0 auto; /* Centers the content horizontally */
+  padding: 10px 15px; /* Adds some space inside */
+  color: #333; /* Text color */
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 767px) {
+  .service-description {
+      font-size: 14px; /* Slightly smaller font for better readability */
+      padding: 10px; /* Adjust padding for small screens */
+      margin-left: 150px;
+  }
+}
 
 @media (max-width: 767px) {
   .about .about-content .about-text p {
@@ -1228,20 +1248,21 @@ display: none;
   h3.my-profession{
     font-size: 15px;
     margin: 15px 0;
-    margin-left: 170px;
+    margin-left: 160px;
   }
   h3.hello{
     font-size: 15px;
     margin: 15px 0;
     margin-left: 150px;
+    color: red;
   }
   #readmore .readmore__content {
-    width: 90%; /* Slightly less than 100% for padding space */
-    max-width: 90%;
+    width: 200%;
+    max-width: 190%;
     box-sizing: border-box;
     word-wrap: break-word;
-    text-align: justify;
-    margin: 0 auto; /* Center the content horizontally */
+    text-align: justify; /* Optional: ensures the text stretches across the width */
+    margin: 0;
     padding: 0;
     font-size: 15px;
   }
