@@ -244,9 +244,11 @@ body.dark {
     display: flex;
     color: var(--text-black-900);
   }
+
   .home .home-info{
-    flex: 0 0 60%;
-    max-width: 60%;
+    width: 100%;
+    max-width: 150%;
+    margin-left: -150px;
   }
   h3.hello{
     font-size: 28px;
@@ -295,8 +297,8 @@ body.dark {
     width: 80px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-    right: 20px;
-    bottom: -40px;
+    right: -38px;
+    bottom: 8px;
 
   }
   .home-img::before {
@@ -306,8 +308,8 @@ body.dark {
     width: 80px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
-    left: -20px;
-    top: -40px;
+    left: 16px;
+    top: 1px;
 
   }
   .home .home-img img{
@@ -992,6 +994,10 @@ display: none;
 }
 
 @media (max-width: 767px) {
+  .home .home-info{
+    width: 100%;
+    max-width: 100%;
+  }
   .button-container {
       display: flex; /* Horizontal alignment */
       justify-content: flex-end; /* Align buttons to the right */
@@ -1222,18 +1228,20 @@ display: none;
   h3.my-profession{
     font-size: 15px;
     margin: 15px 0;
+    margin-left: 170px;
   }
   h3.hello{
     font-size: 15px;
     margin: 15px 0;
+    margin-left: 150px;
   }
   #readmore .readmore__content {
-    width: 200%;
-    max-width: 190%;
+    width: 100%;
+    max-width: 100%;
     box-sizing: border-box;
     word-wrap: break-word;
     text-align: justify; /* Optional: ensures the text stretches across the width */
-    margin: 0;
+    margin-left: 150px;
     padding: 0;
     font-size: 15px;
   }
