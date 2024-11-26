@@ -244,13 +244,25 @@ body.dark {
     display: flex;
     color: var(--text-black-900);
   }
-  .home .home-info{
-    flex: 0 0 60%;
-    max-width: 60%;
+/* Default styling for small screens */
+.home .home-info {
+  flex: 1 1 auto; /* Ensures it adjusts naturally */
+  max-width: 100%; /* Restrict content to the container's width */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+/* Styling for large screens */
+@media (max-width: 767px){ /* Adjust breakpoint if necessary */
+  .home .home-info {
+      flex: 0 0 60%; /* Restrict the flex item size to 60% */
+      max-width: 160%; /* Expand maximum width for large screens */
   }
+}
+
   h3.hello{
     font-size: 28px;
     margin: 15px 0;
+    margin-left: -230px;
   }
   h3.hello span{
     font-family: 'clicker script', cursive;
@@ -267,6 +279,7 @@ body.dark {
   h3.my-profession{
     font-size: 30px;
     margin: 15px 0;
+    margin-left: -220px;
   }
   .typing{
     color: var(--skin-color);
@@ -295,8 +308,8 @@ body.dark {
     width: 80px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-    right: 20px;
-    bottom: -40px;
+    right: 10px;
+    bottom: 10px;
 
   }
   .home-img::before {
@@ -306,9 +319,8 @@ body.dark {
     width: 80px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
-    left: -20px;
-    top: -40px;
-
+    left: 15px;
+    top: 10px;
   }
   .home .home-img img{
     margin: auto;
@@ -656,7 +668,7 @@ body.dark {
 }
 #readmore .readmore__content {
   font-family: 'Georgia', 'Times New Roman', Times, serif;
-
+margin-left: -200px;
 }
 
 .read-more {
