@@ -473,7 +473,7 @@ body.dark {
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
-      max-height: calc(1.5em * 4); /* Adjust max-height to match the number of visible lines */
+      max-height: calc(1.5em * 4);
       transition: max-height 0.3s ease;
   }
   
@@ -1011,8 +1011,20 @@ display: none;
 
 
 
-    /* Style the aside menu for small screens */
 @media (max-width: 767px) {
+  .about .about-content .about-text p {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 1.6;
+  }
   .about .about-content .skills .skills-items{
     flex: 0 0 100%;
     width: 100%;
@@ -1296,27 +1308,17 @@ display: none;
 display: none;
 
 }
-
-
-
 .about .about-text h3 {
   font-size: 1.5rem;
 }
-
-.about .about-text p {
-  font-size: 1rem;
-}
-
 .about .personal-info p {
   font-size: 0.9rem;
 }
-
 .info-items {
   width: 100%;
   text-align: left;
   margin-bottom: 10px;
 }
-
 .info-items p {
   font-size: 0.9rem;
 }
