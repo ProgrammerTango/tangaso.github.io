@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,100;0,200;0,400;0,700;0,800;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
 
 
 :root {
-    --bg-black-900: #f2f2fc;
-    --bg-black-100: #fdf9ff;
-    --bg-black-50:#e8dfec;
-    --text-black-900:#302e4d;
-    --text-black-700:#504e70;
-  }
-  body.dark{
-    --bg-black-900: #151515;
-    --bg-black-100: #222222;
-    --bg-black-50:#f4f4f4;
-    --text-black-900:#ffffff;
-    --text-black-700:#e9e9e9;
-    overflow-x: hidden;
-  }
+  --bg-black-900: #f2f2fc;
+  --bg-black-100: #fdf9ff;
+  --bg-black-50: #e8dfec;
+  --text-black-900: #302e4d; /* Dark text color */
+  --text-black-800: #1f1f30; /* Very dark text for normal mode */
+  --text-black-700: #504e70;
+}
+
+body.dark {
+  --bg-black-900: #151515;
+  --bg-black-100: #222222;
+  --bg-black-50: #f4f4f4;
+  --text-black-900: #ffffff;
+  --text-black-800: #e9e9e9; /* Slightly lighter for dark mode */
+  --text-black-700: #e9e9e9;
+}
+
   
   body {
     margin: 0;
@@ -323,11 +327,6 @@
   color: var(--text-black-900)
 }
 
-.about-text p {
-  color:var(--text-black-700);
-  font-size: 16px;
-}
-
 /* Personal Info */
 .personal-info-about .info-item {
   font-size: 16px;
@@ -359,13 +358,6 @@
   border-radius: 30px;
 }
 
-.skills-about .skill-percent-about {
-  position: absolute;
-  right: 0;
-  top: -25px;
-  color: #333;
-  font-size: 14px;
-}
 /* about section */
 /* Timeline Box */
 .row {
@@ -388,7 +380,7 @@
 .timeline-item-about {
   padding-left: 40px;
   position: relative;
-  background-color: var(--bg-black-100);
+  color: var(--text-black-800);
   margin-top: 20px;
   
   /* Shadow Effect */
@@ -400,20 +392,21 @@
 
 
 .timeline-date-about {
-  color: #666;
+  color: var(--text-black-700);
   font-size: 14px;
   margin-bottom: 5px;
 }
 
 .timeline-title-about {
   font-size: 18px;
-  color: var(--text-black-900);
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, sans-serif;
   margin-bottom: 5px;
+  color: var(--text-black-800);
 }
 
 .timeline-text-about {
   font-size: 16px;
-  color: #555;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
 }
 
 
@@ -463,7 +456,12 @@
   .about .about-content .about-text h3 span{
     color: var(--skin-color);
     }
+
+
+    
     .about .about-content .about-text p {
+      font-family: 'Georgia', 'Times New Roman', Times, serif;
+      color: var(--text-black-800);
       font-size: 18px; 
       line-height: 1.8; 
       text-align: justify; 
@@ -527,16 +525,16 @@
     }
     .about .about-content .skills .skills-items h5 {
       line-height: 1.5;
-      font-weight: 700; 
-      font-size: 18px; 
-      color: var(--text-black-900);
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--text-black-800); 
       text-transform: capitalize;
+      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, sans-serif;
       margin-bottom: 10px;
-      letter-spacing: 0.5px; 
-      border-left: 4px solid var(--skin-color); 
-      padding-left: 12px; 
-      transition: color 0.3s ease, border-left-color 0.3s ease;
+      letter-spacing: 0.5px;
+
   }
+  
     .about .about-content .skills .skills-items .progress{
       background-color: var(--bg-black-50);
       height: 7px;
@@ -640,14 +638,6 @@
   color: #333;
 }
 
-/* Timeline title styling */
-.timeline-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 5px;
-  color: #333;
-}
-
 /* Timeline text styling */
 .timeline-text {
   font-size: 14px;
@@ -665,33 +655,10 @@
   max-height: 20em; /* Allow more lines when expanded */
 }
 #readmore .readmore__content {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  line-clamp: 4; /* Limit to 4 lines */
-  max-height: calc(1.5em * 4); /* Adjust max-height to match the number of visible lines */
-  transition: max-height 0.3s ease;
-  margin-bottom: 0; /* Remove any default margin below the text */
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+
 }
 
-#readmore .readmore__content.expanded {
-  max-height: 100%; /* Expand to full height when active */
-}
-
-#readmore .read-more {
-  display: inline-block;
-  margin-top: 5px; /* Reduce the top margin to bring the button closer to the text */
-  color: #007BFF; /* Bootstrap primary color */
-  text-decoration: none;
-  font-weight: bold;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-#readmore .read-more:hover {
-  color: #007BFF; /* Bootstrap primary color */
-}
 .read-more {
   display: inline-block;
   margin-top: 0.5em;
@@ -758,16 +725,22 @@
     }
     .service .service-item .service-item-inner h4{
       font-size: 18px;
-      margin-bottom: 15px;
-      color: var(--text-black-900);
-      font-weight: 700;
-      text-transform: capitalize;
+      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, sans-serif;
+      margin-bottom: 5px;
+      color: var(--text-black-800);
     }
-    .service .service-item .service-item-inner p{
+    .service .service-item .service-item-inner p {
       font-size: 16px;
-      color: var(--text-black-700);
-      line-height: 20px;
+      font-family: 'Georgia', 'Times New Roman', Times, serif;
+      line-height: 1.8; 
+      color: var(--text-black-900); 
+      margin-bottom: 15px; 
+      padding: 5px 10px;
+      text-align: justify; 
+      letter-spacing: 0.5px; 
+      transition: color 0.3s ease; 
     }
+    
     /*portfolio*/
     .portfolio .container{
       padding-bottom: 40px;
@@ -777,6 +750,7 @@
       flex: 0 0 100%;
       width: 100%;
       margin-bottom: 40px;
+      color: var(--text-black-800);
     }
 
     .portfolio .portfolio-item{
@@ -923,12 +897,14 @@ display: none;
 #about .row h6 {
   font-size: 20px; /* Adjust font size */
   font-weight: bold; /* Make the title bold */
-  text-transform: capitalize; /* Capitalize the first letter of each word */
-  margin-bottom: 15px; /* Add space below the title */
-  padding-bottom: 5px; /* Slight padding for clarity */
-  position: relative; /* For positioning the underline */
+  text-transform: capitalize;
+  margin-bottom: 15px; 
+  padding-bottom: 5px; 
+  position: relative; 
   margin-left: 35%;
   margin-top: 20px;
+  color: var(--text-black-800);
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, sans-serif;
 }
 /* WhatsApp and Top Button Styles */
 .whatsapp-button,
@@ -998,21 +974,6 @@ display: none;
   opacity: 1; /* Show title on hover */
   background-color: rgba(0, 0, 0, 0.7); /* Darker background when hovered */
 }
-
-.btn-contact,
-.btn-cv {
-  font-size: 14px;
-  font-weight: 500;
-  padding: 10px 20px;
-  color: white;
-  border-radius: 30px;
-  text-decoration: none; /* Remove underline */
-  background: var(--skin-color);
-  transition: background 0.3s ease;
-  display: inline-block;
-  white-space: nowrap; /* Prevent text wrapping */
-}
-
 .btn-contact,
 .btn-cv {
     font-size: 14px;
@@ -1030,23 +991,22 @@ display: none;
     z-index: 10;
 }
 
-@media screen and (max-width: 480px) {
-    .button-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        margin-top: -110px;
-    }
+@media (max-width: 767px) {
+  .button-container {
+      display: flex; /* Horizontal alignment */
+      justify-content: flex-end; /* Align buttons to the right */
+      gap: 10px; /* Add spacing between buttons */
+      flex-wrap: nowrap; /* Prevent wrapping */
+      margin-top: -90px; /* Move the buttons upwards */
+      position: relative; /* Ensure the container remains within its section */
+  }
 
-    .btn-contact,
-    .btn-cv {
-        padding: 8px 16px;
-        font-size: 12px;
-        width: auto;
-        display: block;
-    }
+  .btn-contact,
+  .btn-cv {
+      padding: 8px 16px;
+      font-size: 12px;
+      width: auto;
+  }
 }
 
 
@@ -1124,9 +1084,9 @@ display: none;
   .section-title, .contact-title, .contact-sub-title, .contact-info-item, 
   .form-item, .about-text, .info-items1, .skills-items, .timeline-item-about, 
   .service-item, .portfolio-item {
-      opacity: 0; /* Initially hidden */
-      transform: translateY(50px); /* Positioned below initially */
-      transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth fly-in transition */
+      opacity: 0; 
+      transform: translateY(50px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
   }
   .timeline-item-about {
     position: relative;
