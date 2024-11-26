@@ -308,7 +308,7 @@ body.dark {
     width: 80px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-    right: 10px;
+    right: -36px;
     bottom: 10px;
 
   }
@@ -320,7 +320,7 @@ body.dark {
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
     left: 15px;
-    top: 10px;
+    top: 2px;
   }
   .home .home-img img{
     margin: auto;
@@ -536,15 +536,18 @@ body.dark {
       margin-bottom: 20px;
     }
     .about .about-content .skills .skills-items h5 {
-      line-height: 1.5;
+      font-size: 20px;
       font-weight: 700;
-      font-size: 18px;
-      color: var(--text-black-800); 
+      line-height: 1.6;
+      color: var(--text-black-800);
       text-transform: capitalize;
       font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, sans-serif;
-      margin-bottom: 10px;
-      letter-spacing: 0.5px;
-
+      margin-bottom: 12px;
+      letter-spacing: 0.8px;
+      text-align: left;
+      padding: 5px 0;
+      transition: color 0.3s ease;
+      margin-left: 10px;
   }
   
     .about .about-content .skills .skills-items .progress{
@@ -658,13 +661,13 @@ body.dark {
 }
 /* service section  */
 .service-description {
-  max-height: 5em; /* Limit height to 5 lines */
+  max-height: 5em; 
   overflow: hidden;
-  transition: max-height 0.3s ease; /* Smooth transition */
+  transition: max-height 0.3s ease; 
 }
 
 .service-description.expanded {
-  max-height: 20em; /* Allow more lines when expanded */
+  max-height: 20em; 
 }
 #readmore .readmore__content {
   font-family: 'Georgia', 'Times New Roman', Times, serif;
@@ -674,7 +677,7 @@ margin-left: -200px;
 .read-more {
   display: inline-block;
   margin-top: 0.5em;
-  color: #007BFF; /* Bootstrap primary color */
+  color: #007BFF; 
   cursor: pointer;
 }
     .about .about-content .timeline .timeline-date .fa{
