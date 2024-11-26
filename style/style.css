@@ -1236,12 +1236,12 @@ display: none;
     margin-left: 150px;
   }
   #readmore .readmore__content {
-    width: 100%;
-    max-width: 100%;
+    width: 90%; /* Slightly less than 100% for padding space */
+    max-width: 90%;
     box-sizing: border-box;
     word-wrap: break-word;
     text-align: justify;
-    margin-left: 0; /* Adjusted to ensure it fits smaller screens */
+    margin: 0 auto; /* Center the content horizontally */
     padding: 0;
     font-size: 15px;
   }
