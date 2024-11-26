@@ -245,8 +245,9 @@ body.dark {
     color: var(--text-black-900);
   }
   .home .home-info{
-    flex: 0 0 60%;
-    max-width: 60%;
+    max-width: 100%;
+    margin-left: -190px;
+
   }
   h3.hello{
     font-size: 28px;
