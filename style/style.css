@@ -998,6 +998,69 @@ display: none;
     position: relative;
     z-index: 10;
 }
+    /* General styles for the form */
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color:var(--bg-black-900);
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-item {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+      box-sizing: border-box;
+  }
+
+  .form-item:focus {
+      border-color: #007BFF;
+      outline: none;
+  }
+
+  .btn {
+      display: inline-block;
+      width: 100%;
+      padding: 10px;
+      background-color:var(--skin-color);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+  }
+
+  .btn:hover {
+      background-color: #0056b3;
+  }
+
+  #msg {
+      display: block;
+      margin-top: 10px;
+      font-size: 14px;
+  }
+
+  /* Small screens (mobile-first design) */
+  @media (max-width: 576px) {
+      .contact-form {
+          padding: 15px;
+      }
+
+      .form-item {
+          font-size: 14px;
+          padding: 8px;
+      }
+
+      .btn {
+          font-size: 16px;
+          padding: 8px;
+      }
+  }
 
 @media (max-width: 767px) {
   .button-container {
