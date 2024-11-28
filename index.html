@@ -519,20 +519,6 @@
 
     </section>
 
-    <script type="text/javascript">
-        // Handle form submission
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            // Send email via EmailJS
-            emailjs.sendForm('service_l4ihwkp', 'template_w364vco', this)
-                .then(function() {
-                    document.getElementById('msg').textContent = 'Message sent successfully!';
-                }, function(error) {
-                    document.getElementById('msg').textContent = 'Failed to send message. Please try again.';
-                });
-        });
-    </script>
 
 
     <!--contact section end-->

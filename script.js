@@ -166,3 +166,35 @@ document.addEventListener('DOMContentLoaded', () => {
     contactBtn.addEventListener('touchstart', () => console.log('Contact button touched'));
     cvBtn.addEventListener('touchstart', () => console.log('CV button touched'));
 });
+
+
+
+    // Handle form submission
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Reference to the form
+        const form = this;
+
+        // Send email via EmailJS
+        emailjs.sendForm('service_l4ihwkp', 'template_w364vco', form)
+            .then(function() {
+                // Display success message
+                const messageElement = document.getElementById('msg');
+                messageElement.textContent = 'Message sent successfully!';
+                messageElement.style.color = 'green'; // Optional styling
+
+                // Reset the form after showing the message
+                form.reset();
+
+                // Clear the message after a few seconds (optional)
+                setTimeout(() => {
+                    messageElement.textContent = '';
+                }, 3000);
+            }, function(error) {
+                // Display error message
+                const messageElement = document.getElementById('msg');
+                messageElement.textContent = 'Failed to send message. Please try again.';
+                messageElement.style.color = 'red'; // Optional styling
+            });
+    });
