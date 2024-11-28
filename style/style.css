@@ -1027,7 +1027,7 @@ display: none;
       display: inline-block;
       width: 100%;
       padding: 10px;
-      background-color:var(--skin-color);
+      background-color: var(--skin-color);
       color: white;
       border: none;
       border-radius: 5px;
@@ -1061,7 +1061,6 @@ display: none;
           padding: 8px;
       }
   }
-
 @media (max-width: 767px) {
   .button-container {
     display: flex; /* Horizontal alignment */
