@@ -1204,10 +1204,10 @@ display: none;
   .contact-info-item {
     display: block !important; /* Ensure it is visible */
     width: 100%; /* Allow full width */
-    margin: 10px 0; /* Add spacing */
+    margin: -40px 0; /* Add spacing */
     padding: 15px;
     text-align: center;
-    background-color: #f9f9f9; /* Light background for visibility */
+    background-color:var(--bg-black-900);
     border: 1px solid #ccc; /* Optional border for visibility */
     border-radius: 5px;
   }
