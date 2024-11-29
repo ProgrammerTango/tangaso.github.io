@@ -1202,11 +1202,15 @@ display: none;
     background: var(--skin-color);
   }
   .contact-info-item {
-    flex: 1 1 calc(50% - 30px); /* Two items per row with some margin */
-    margin: 15px; /* Space between items */
-    display: block;
-    background-color: red;
-}
+    display: block !important; /* Ensure it is visible */
+    width: 100%; /* Allow full width */
+    margin: 10px 0; /* Add spacing */
+    padding: 15px;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background for visibility */
+    border: 1px solid #ccc; /* Optional border for visibility */
+    border-radius: 5px;
+  }
 
 
   .copyright {
