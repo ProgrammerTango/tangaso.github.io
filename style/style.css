@@ -61,6 +61,7 @@ body.dark {
   .section-title {
     width: 100%; /* Ensure it spans the full width */
     margin-bottom: 40px; /* Balanced spacing below */
+    margin-top: 50px;
     text-align: center; /* Center-align the title */
     font-size: 24px; /* A slightly larger font for prominence */
     font-weight: 700; /* Make the title stand out */
