@@ -1349,12 +1349,14 @@ display: none;
     margin-top: 32vh;
     margin-left: -50vh;
 }
-.section {
-  width: 100%; 
-  max-width: 500px; 
-  margin: 0 auto; 
-  padding: 10px;
-}
+  .section {
+    width: 100%; /* Full width */
+    max-width: 100%; /* Remove width restriction */
+    margin: 0; /* Remove margins */
+    padding: 0; /* Remove paddings */
+  }
+
+
 .home-img::after {
 display: none;
 
