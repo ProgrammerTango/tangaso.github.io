@@ -104,7 +104,6 @@ body.dark {
   .row{
     display: flex;
     flex-wrap: wrap;
-
     position: relative;
   }
   .btn{
@@ -1158,8 +1157,8 @@ display: none;
     background-color: var(--bg-black-100);
     border-radius: 8px; /* Smooth corners */
     margin-top: 20px;
-    max-width: 600px;
-    width: 90%;
+    max-width: 200%;
+    width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-left: auto;
@@ -1278,6 +1277,7 @@ display: none;
   h3.hello{
     font-size: 15px;
     margin: 15px 0;
+    margin-top: 30px;
   }
   #readmore .readmore__content {
     width: 200%;
@@ -1445,15 +1445,15 @@ transform: translate(-50%, -50%); /* Center the menu */
 .contact .contact-info-item, .portfolio .portfolio-item, .service .service-item {
     flex: 0 0 100%;
     max-width: 100%;
+    background-color: red;
 }
 
 .hidden {
     display: none !important;
 }
 
-.contact .contact-form .col-6, .contact .contact-info-item,
+.contact .contact-form .col-6, .contact 
 .portfolio .portfolio-item, .service .service-item {
-    flex: 0 0 100%;
     max-width: 100%;
 }
 
