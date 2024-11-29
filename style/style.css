@@ -375,21 +375,25 @@ body.dark {
   background-color: var(--bg-black-900);
 }
 
-.timeline-box-about, .timeline-box1-about {
+.timeline-box-about {
   padding: 20px;
   margin-bottom: 20px;
   height: 100%;
 }
-.timeline-item-about {
-  padding-left: 40px;
-  position: relative;
-  color: var(--text-black-800);
-  margin-top: 20px;
-  
-  /* Shadow Effect */
-  box-shadow: 0 1px 1px rgba(1, 0, 0, 2.0); /* Adjust values as needed */
-  border-radius: 19px; /* Optional: adds rounded corners */
+.timeline-about {
+  display: grid; /* Enables Grid layout */
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+  gap: 20px; /* Adds space between items */
 }
+
+.timeline-item-about {
+  padding: 20px; /* Adjust spacing within each item */
+  background-color:var(--bg-black-100);
+  color: #fff;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
 
 
 
@@ -970,8 +974,8 @@ display: none;
   font-size: 18px;
   font-weight: 600;
   font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, sans-serif;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+  color: #0c0c0c;
+  background-color: var(--bg-black-100);
   padding: 5px 10px;
   border-radius: 5px;
   transition: opacity 0.3s ease, background-color 0.3s ease;
@@ -1015,6 +1019,7 @@ display: none;
       border-radius: 5px;
       font-size: 16px;
       box-sizing: border-box;
+      background-color: var(--bg-black-700);
   }
 
   .form-item:focus {
@@ -1061,6 +1066,9 @@ display: none;
       }
   }
 @media (max-width: 767px) {
+  .timeline-about {
+    grid-template-columns: 1fr; /* Single column for small screens */
+  }
   .button-container {
     display: flex; /* Horizontal alignment */
     justify-content: flex-end; /* Align buttons to the right */
@@ -1125,12 +1133,11 @@ display: none;
   margin: 0; /* Remove margins */
   padding: 0; /* Remove paddings */
 }
-  .timeline-box-about, .timeline-box1-about {
+  .timeline-box-about{
     width: 100%;
   }
   .floating-buttons {
     bottom: 40px;
-    right: 5%;
 }
 
 .whatsapp-button,
@@ -1463,6 +1470,122 @@ transform: translate(-50%, -50%); /* Center the menu */
     max-width: 100%;
 }
 
+}
+
+
+
+
+
+
+
+
+
+
+/* Tablet-specific styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .home .home-img{
+    flex: 0 0 40%;
+    width: 200vh;
+    text-align: center;
+    position: relative;
+    margin-left: -110px;
+    margin-top: -150px;
+  }
+  .home-img::after {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-bottom: 10px solid var(--skin-color);
+    border-right: 10px solid var(--skin-color);
+    right: 140px;
+    bottom: 8px;
+
+  }
+  .home-img::before {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-top: 10px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color);
+    left: 7px;
+    top: 120px;
+  }
+  .home .home-img img{
+    border-radius: 15px;
+    height: 400px;
+  }
+
+
+  .btn-contact,
+  .btn-cv {
+    padding: 10px 20px;
+    font-size: 14px; /* Slightly larger font for readability */
+    width: auto;
+  }
+
+  .home .home-info {
+    flex: 0 0 70%; /* Adjust flex size for better alignment */
+    max-width: 140%; /* Adjust width for tablet screens */
+  }
+
+  .about .about-content .about-text p {
+    font-size: 16px;
+    line-height: 1.8; /* Improve readability */
+  }
+
+  .about .about-content .skills {
+    margin-top: 30px; /* Add spacing for better visual separation */
+  }
+
+  .main-container {
+    max-width: 900px; /* Restrict container width for tablet screens */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+
+  .home .home-img img {
+    width: 70%; /* Resize images for tablets */
+    margin-top: 20vh;
+    margin-left: -20vh;
+  }
+
+  .section {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-left: 100px;
+  }
+
+  .skills .row {
+    grid-template-columns: repeat(2, 1fr); /* Display two columns */
+    gap: 15px;
+  }
+
+  .menu-toggle {
+    height: 50px; /* Increase size for better usability */
+    font-size: 18px;
+  }
+
+  .nav-toggler {
+    top: 15px; /* Adjust position for better alignment */
+    right: 15px;
+  }
+
+  .contact .contact-info-item,
+  .portfolio .portfolio-item,
+  .service .service-item {
+    flex: 0 0 48%; /* Two items per row */
+    max-width: 48%;
+    margin: 1%;
+  }
+
+  .aside {
+    width: 33%; /* Reduce width for tablets */
+  }
 }
 
 

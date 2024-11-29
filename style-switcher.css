@@ -24,7 +24,7 @@
     color: var(--text-black-900);
     right: 100%;
     border: 1px solid var(--bg-black-50);
-    margin-right: 25px;
+    margin-right: 15px;
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 50%;
