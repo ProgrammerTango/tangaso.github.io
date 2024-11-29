@@ -1204,6 +1204,8 @@ display: none;
   .contact-info-item {
     flex: 1 1 calc(50% - 30px); /* Two items per row with some margin */
     margin: 15px; /* Space between items */
+    display: block;
+    background-color: red;
 }
 
 
@@ -1445,7 +1447,6 @@ transform: translate(-50%, -50%); /* Center the menu */
 .contact .contact-info-item, .portfolio .portfolio-item, .service .service-item {
     flex: 0 0 100%;
     max-width: 100%;
-    background-color: red;
 }
 
 .hidden {
@@ -1454,6 +1455,7 @@ transform: translate(-50%, -50%); /* Center the menu */
 
 .contact .contact-form .col-6, .contact 
 .portfolio .portfolio-item, .service .service-item {
+    flex: 0 0 100%;
     max-width: 100%;
 }
 
