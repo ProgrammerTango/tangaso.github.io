@@ -1050,12 +1050,6 @@ display: none;
       margin-top: 10px;
       font-size: 14px;
   }
-  @media screen and (min-width: 1024px) {
-    /* Styles for screens that are at least 1024px wide */
-    body {
-        font-size: 18px; /* Example of a desktop-specific style */
-    }
-}
 
   /* Small screens (mobile-first design) */
   @media (max-width: 576px) {
@@ -1596,58 +1590,6 @@ transform: translate(-50%, -50%); /* Center the menu */
   }
 }
 
-/* Large mobile devices and small desktops (1025px to 1280px) */
-@media (min-width: 1025px) and (max-width: 1280px) {
-  .home .home-img {
-    flex: 0 0 35%; /* Adjust image size for better layout */
-    width: 50%;
-    margin-left: -10vh;
-    margin-top: 10vh;
-  }
-  .home .home-img img {
-    width: 80%;
-    border-radius: 10px;
-  }
 
-  .btn-contact,
-  .btn-cv {
-    font-size: 14px;
-    padding: 10px 16px;
-    background-color: red;
-  }
-
-  .about .about-content {
-    font-size: 17px;
-    line-height: 1.7;
-  }
-
-  .main-container {
-    max-width: 85%;
-    margin: 0 auto;
-    padding: 15px;
-    background-color: red;
-  }
-
-  .skills .row {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-
-  .section-title h2 {
-    font-size: 1.8rem;
-  }
-
-  .menu-toggle {
-    font-size: 18px;
-    height: 45px;
-  }
-
-  .contact .contact-info-item,
-  .portfolio .portfolio-item,
-  .service .service-item {
-    flex: 0 0 48%;
-    max-width: 48%;
-  }
-}
 
 
