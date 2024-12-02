@@ -37,7 +37,67 @@
 
 
                 <!--home-section-start-->
+                <section class="home section active" id="home">
+                    <div class="education-about padd-15">
+                        <!--aside start-->
+                                    <div class="aside" id="sidemenu">
+                                        <div class="logo">
+                                            <a href="#"><span></span>T<span>ANG</span>A<span>SO</span></a>
+                                        </div>
+                                        <div class="nav-toggler">
+                                            <span></span>
+                                        </div>
+                                        <ul class="nav">
+                                            <li><a href="#home" class="active" onclick="navigateToSection(event, 'home')"><i class="fa fa-home"></i>Home</a></li>
+                                            <li><a href="#about" onclick="navigateToSection(event, 'about')"><i class="fa fa-user"></i>About</a></li>
+                                            <li><a href="#services" onclick="navigateToSection(event, 'services')"><i class="fa fa-list"></i>Services</a></li>
+                                            <li><a href="#portfolio" onclick="navigateToSection(event, 'portfolio')"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                                            <li><a href="#contact" onclick="navigateToSection(event, 'contact')"><i class="fa fa-comments"></i>Contact</a></li>
+                                            <i id="close" class="fa fa-times" onclick="closeMenu()" style="cursor: pointer; padding: 15px;"></i>
+                                        </ul>
+                                    </div>
 
+                                    <div class="menu-toggle" onclick="toggleMenu()">
+                                            <span class="menu-icon">&#9776;</span> 
+                                        </div>
+                                              <div class="floating-buttons">
+                                                    <!-- WhatsApp Button -->
+                                                    <a href="https://wa.me/254797062242" target="_blank" class="whatsapp-button" title="WhatsApp">
+                                                        <i class="fab fa-whatsapp icon"></i> <!-- Font Awesome Icon -->
+                                                    </a>
+                                                    
+                                                    <!-- Scroll to Top Button -->
+                                                    <button onclick="scrollToTop()" class="top-button" title="Back to Top">
+                                                        <i class="fas fa-arrow-up icon"></i> <!-- Font Awesome Icon -->
+                                                    </button>
+                                              </div>
+
+                                             <i id="close1" class="fa fa-solid fa-bars" onclick="openmenu()"></i>
+                                                <div class="row">
+                                                    <div class="home-info padd-15">
+                                                        <h3 class="hello">Hi, my name is <span> <div class="name">Dickson Tangaso</div> </span></h3>
+                                                        <h3 class="my-profession">l'm a <span class="typing">Software developer</span></h3>
+                                                        <div id="readmore" class="service-item padd-15">
+                                                            <div class="service-item-inner">
+                                                                <p class="readmore__content">
+                                                                    Web and Java developer with 3+ years' experience in Spring Boot, Oracle SQL, and responsive design. Let’s build something great!            </p>
+                                                            </div>
+                                                        </div>                
+                                                                <a href="#contact" class="hire me" style="color: white">.</a>
+                                                            
+                                                    </div>
+                                                    
+                                                            <div class="home-img padd-15">
+                                                                <img src="imgs/ds.jpg" alt="">
+                                                            </div>
+                                                </div>
+                                                    <div class="button-container">
+                                                        <a href="javascript:void(0);" class="btn-contact" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Contact me</a>
+                                                      
+                                                        <a href="imgs/DICKSON CV 2024 updated.pdf" class="btn-cv">View CV</a>
+                                              </div>
+                               </div>                             
+                 </section> 
                 <!--home-section-end-->
 
 
