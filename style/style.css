@@ -1613,6 +1613,7 @@ transform: translate(-50%, -50%); /* Center the menu */
   .btn-cv {
     font-size: 14px;
     padding: 10px 16px;
+    background-color: red;
   }
 
   .about .about-content {
@@ -1624,6 +1625,7 @@ transform: translate(-50%, -50%); /* Center the menu */
     max-width: 85%;
     margin: 0 auto;
     padding: 15px;
+    background-color: red;
   }
 
   .skills .row {
