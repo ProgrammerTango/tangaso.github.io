@@ -46,15 +46,13 @@ body.dark {
   .hidden{
     display: none !important;
   }
-  .main-content{
-    padding-left: 270px;
-  }
+
   .padd-15{
     padding-left: 15px;
     padding-right: 15px;
   }
 
-  .section .container{
+  .section {
     padding-top: 60px;
     padding-bottom: 70px;
   }
@@ -105,7 +103,10 @@ body.dark {
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    justify-content: space-between;
+    background-color: red;
   }
+ 
   .btn{
     font-size: 12px;
     font-weight: 500;
@@ -242,6 +243,7 @@ body.dark {
     min-height: 100vh;
     display: flex;
     color: var(--text-black-900);
+    margin-left: 270PX;
   }
 /* Default styling for small screens */
 .home .home-info {
@@ -361,13 +363,7 @@ body.dark {
   border-radius: 30px;
 }
 
-/* about section */
 /* Timeline Box */
-.row {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
 
 .education-about, .experience-about {
   flex: 1;
