@@ -1491,7 +1491,7 @@ transform: translate(-50%, -50%); /* Center the menu */
     width: 200vh;
     text-align: center;
     position: relative;
-    margin-left: -110px;
+    margin-left: 60px;
     margin-top: -150px;
   }
   .home-img::after {
@@ -1527,10 +1527,16 @@ transform: translate(-50%, -50%); /* Center the menu */
     font-size: 14px; /* Slightly larger font for readability */
     width: auto;
   }
+  #readmore .readmore__content {
+    width: 50%;
+    max-width: 100%;
 
+  }
   .home .home-info {
     flex: 0 0 70%; /* Adjust flex size for better alignment */
     max-width: 140%; /* Adjust width for tablet screens */
+    width: 50vh;
+    margin-left: 40vh;
   }
 
   .about .about-content{
