@@ -55,6 +55,7 @@ body.dark {
   .section {
     padding-top: 60px;
     padding-bottom: 70px;
+    background-color: red;
   }
   .section-title {
     width: 100%; /* Ensure it spans the full width */
@@ -360,6 +361,9 @@ body.dark {
   height: 100%;
   background-color: var(--skin-color);
   border-radius: 30px;
+}
+.home .education-about{
+  /* background-color: red; */
 }
 
 /* Timeline Box */
