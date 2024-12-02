@@ -27,6 +27,7 @@ body.dark {
     line-height: 1.5;
     font-size: 16px;
     font-family: "Poppins", sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 
   }
   *{
@@ -99,14 +100,18 @@ body.dark {
     left: 50%; 
     transform: translateX(-50%);
   }
-  .row{
+  .row {
     display: flex;
     flex-wrap: wrap;
     position: relative;
     justify-content: space-between;
-    background-color: red;
-    width: 100vh;
+    width: 100%; /* Change vh to % for proper width handling */
+    max-width: 1200px; /* Optional: set a maximum width if desired */
+    margin: 0 auto; /* Center the row if a max-width is set */
+    padding: 10px; /* Add some padding for better spacing */
+    box-sizing: border-box; /* Ensure padding is included in the width */
   }
+  
  
   .btn{
     font-size: 12px;
@@ -240,12 +245,27 @@ body.dark {
     margin-right: 15px;
   }
   /*home*/
-  .home{
-    min-height: 100vh;
-    display: flex;
-    color: var(--text-black-900);
-    margin-left: 270PX;
+  .home {
+    width: 100%;
+    max-width: 1200px; /* Align the parent container width */
+    margin: 0 auto; /* Center the parent container */
+    padding: 0; /* Reset unnecessary padding */
+    box-sizing: border-box;
   }
+  
+  .home .row {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+    background-color: red;
+    width: 100%; /* Fit within the parent container */
+    max-width: 1200px; /* Optional: limits the max width */
+    margin: 0 auto; /* Centers the row if max-width is set */
+    padding: 10px; /* Ensure internal spacing is controlled */
+    box-sizing: border-box; /* Include padding in width calculations */
+  }
+  
 /* Default styling for small screens */
 .home .home-info {
   flex: 1 1 auto; /* Ensures it adjusts naturally */
@@ -1072,6 +1092,7 @@ display: none;
           padding: 8px;
       }
   }
+  
 @media (max-width: 767px) {
   .timeline-about {
     grid-template-columns: 1fr; /* Single column for small screens */
@@ -1084,6 +1105,51 @@ display: none;
     margin-top: -90px; /* Move the buttons upwards */
     position: relative; /* Ensure the container remains within its section */
 }
+@media (max-width: 767px) {
+  /* Ensure .home section takes full width and height */
+  .home {
+    display: block; /* Ensure it's displayed */
+    width: 100%; /* Ensure full width */
+    min-height: 100vh; /* Make sure it occupies the full viewport height */
+  }
+
+
+  .home .home-info {
+    flex: 0 0 60%; /* Restrict the flex item size to 60% */
+    max-width: 160%; /* Expand maximum width for large screens */
+}
+  /* Adjust .home-img to fit better on small screens */
+  .home .home-img img {
+    width: 70%; /* Resize the image for smaller screens */
+    height: auto; /* Ensure the aspect ratio is maintained */
+    border-radius: 50%; /* Optional: Circular image */
+    margin-top: 20px; /* Adjust top margin for better positioning */
+  }
+
+  /* Adjust home content layout */
+  .home .home-content {
+    display: block; /* Make sure the content flows normally */
+    text-align: center; /* Center the text */
+    padding: 10px; /* Add some padding for better spacing */
+  }
+
+  /* Fix any potential layout issues with grid */
+  .home .home-info, .home .home-img {
+    width: 100%; /* Ensure both elements take full width */
+    max-width: 100%;
+  }
+
+  /* Additional fixes for any container that might overflow */
+  .home .home-info, .home .home-content {
+    box-sizing: border-box; /* Include padding in the width calculation */
+  }
+
+  /* Optional: Fix the positioning of elements with negative margins */
+  .home .home-img img {
+    margin-top: 10vh; /* Adjust for better visibility */
+    margin-left: 0; /* Reset any negative margins */
+  }
+}
 
 .btn-contact,
 .btn-cv {
@@ -1091,10 +1157,7 @@ display: none;
     font-size: 12px;
     width: auto;
 }
-  .home .home-info {
-    flex: 0 0 60%; /* Restrict the flex item size to 60% */
-    max-width: 160%; /* Expand maximum width for large screens */
-}
+
   .about .about-content {
     width: 100%;
     max-width: 100%;
