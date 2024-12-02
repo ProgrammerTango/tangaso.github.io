@@ -55,7 +55,6 @@ body.dark {
   .section {
     padding-top: 60px;
     padding-bottom: 70px;
-    background-color: red;
   }
   .section-title {
     width: 100%; /* Ensure it spans the full width */
@@ -321,284 +320,6 @@ body.dark {
     height: 400px;
   }
 
-  /*about*/
-/* About Text */
-.about-text h3 {
-  font-size: 28px;
-  color: #333;
-}
-
-.about-text h3 span {
-  color: var(--text-black-900)
-}
-
-/* Personal Info */
-.personal-info-about .info-item {
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.personal-info-about .info-item span {
-  color: var(--text-black-900);
-}
-
-/* Skills Section */
-.skills-about .skills-item-about h5 {
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.skills-about .progress-about {
-  background-color: #ddd;
-  border-radius: 30px;
-  height: 10px;
-  position: relative;
-}
-
-.skills-about .progress-in-about {
-  height: 100%;
-  background-color: var(--skin-color);
-  border-radius: 30px;
-}
-.home .education-about{
-  /* background-color: red; */
-}
-
-/* Timeline Box */
-
-.education-about, .experience-about {
-  flex: 1;
-  margin-left: 20%;
-  background-color: var(--bg-black-900);
-}
-
-.timeline-box-about {
-  padding: 20px;
-  margin-bottom: 20px;
-  height: 100%;
-}
-.timeline-about {
-  display: grid; /* Enables Grid layout */
-  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
-  gap: 20px; /* Adds space between items */
-}
-
-.timeline-item-about {
-  padding: 20px; /* Adjust spacing within each item */
-  background-color:var(--bg-black-100);
-  color: #fff;
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-}
-
-
-
-
-
-.timeline-date-about {
-  color: var(--text-black-700);
-  font-size: 14px;
-  margin-bottom: 5px;
-}
-
-.timeline-title-about {
-  font-size: 18px;
-  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, sans-serif;
-  margin-bottom: 5px;
-  color: var(--text-black-800);
-}
-
-.timeline-text-about {
-  font-size: 16px;
-  font-family: 'Georgia', 'Times New Roman', Times, serif;
-  color:var(--text-black-800);
-}
-.about-text, .about-text p {
-  display: block !important;
-  height: auto !important;
-  overflow: visible !important;
-  padding-bottom: 50px !important; /* Prevent clipping at the bottom */
-  font-size: 14px !important; /* Adjust font size for small screens */
-}
-
-
-/* Buttons */
-.buttons-about a {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 50px;
-  text-transform: uppercase;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.buttons-about a:hover {
-  background-color: #0056b3;
-  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
-}
-
-
-    
-.timeline-box {
-  position: relative;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-
-
-  .about .about-content{
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .about .about-content .about-text{
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .about .about-content .about-text h3{
-    font-size: 24px;
-    margin-bottom: 15px;
-    font-weight: 700;
-    color: var(--text-black-900);
-  }
-  .about .about-content .about-text h3 span{
-    color: var(--skin-color);
-    }
-
-
-    
-    .about .about-content .about-text p {
-      font-family: 'Georgia', 'Times New Roman', Times, serif;
-      color: var(--text-black-800);
-      font-size: 18px; 
-      line-height: 1.8; 
-      text-align: justify; 
-      margin-bottom: 15px;
-      letter-spacing: 0.5px; 
-      padding: 5px 10px; 
-      transition: color 0.3s ease; 
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-height: calc(1.5em * 4);
-      transition: max-height 0.3s ease;
-  }
-  
-  .home-info p:hover , .about .about-content .about-text p:hover {
-      color: var(--skin-color); 
-  }
-  
-
-    .about .about-content .personal-info{
-      flex: 0 0 60%;
-      max-width: 60%;
-      margin-top: 40px;
-    }
-    .about .about-content .personal-info .info-items{
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
-    .about .about-content .personal-info .info-items p{
-      font-weight: 600;
-      padding: 10px 0;
-      font-size: 16px;
-      color: var(--text-black-900);
-      border-bottom: 1px solid var(--bg-black-50);
-    }
-    .about .about-content .personal-info .info-items p span{
-      font-weight: 400;
-      color: var(--text-black-700);
-      margin-left: 4px;
-      display: inline-block;
-    }
-    .about .about-content .personal-info .buttons{
-      margin-top: 30px;
-    }
-    .about .about-content .personal-info .buttons .btn{
-      margin-right: 15px;
-      margin-top: 10px;
-    }
-    .about .about-content .skills {
-      flex: 0 0 40%;
-      max-width: 40%;
-      margin-top: 40px;
-      min-width: 200px; 
-      overflow: visible; 
-  }
-    .about .about-content .skills .skills-items{
-      flex: 0 0 100%;
-      max-width: 100%;
-      margin-bottom: 20px;
-    }
-    .about .about-content .skills .skills-items h5 {
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 1.6;
-      color: var(--text-black-800);
-      text-transform: capitalize;
-      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, sans-serif;
-      margin-bottom: 12px;
-      letter-spacing: 0.8px;
-      text-align: left;
-      padding: 5px 0;
-      transition: color 0.3s ease;
-      margin-left: 10px;
-  }
-  
-    .about .about-content .skills .skills-items .progress{
-      background-color: var(--bg-black-50);
-      height: 7px;
-      border-radius: 4px;
-      width: 100%;
-      position: relative;
-    }
-    .about .about-content .skills .skills-items .progress .progress-in{
-      position: absolute;
-      left: 0;
-      top: 0;
-      height: 100%;
-      border-radius: 4px;
-      background-color: var(--skin-color);
-    }
-    .about .about-content .skills .skills-items .skill-percent{
-      position: absolute;
-      right: 0;
-      color: var(--text-black-900);
-      top: -40px;
-      font-weight: 400;
-      line-height: 40px;
-    }
-    .about .about-content .education,
-    .about .about-content .experience{
-     flex: 0 0 50%;
-     max-width: 50%;
-     margin-top: 30px;
-    }
-    .about .about-content h3.tittle{
-      font-size: 24px;
-      margin-bottom: 30px;
-      font-weight: 700;
-      color: var(--text-black-900);
-    }
-    .about .about-content .timeline-box{
-      flex: 0 0 100%;
-      max-width: 100%;
-    }
-    .about .about-content .timeline{
-      background-color: var(--bg-black-100);
-      padding: 3opx 15px;
-      border: 1px solid var(--bg-black-50);
-      border-radius: 10px;
-      width: 100%;
-      position: relative;
-    }
-    
     /* General timeline box styling */
 .timeline-box {
   position: relative;
@@ -681,22 +402,7 @@ margin-left: -200px;
   color: #007BFF; 
   cursor: pointer;
 }
-    .about .about-content .timeline .timeline-date .fa{
-      margin-right: 5px;
-    }
-    .about .about-content .timeline .timeline-title{
-      font-weight: 700;
-      font-size: 18px;
-      margin-bottom: 15px;
-      text-transform: capitalize;
-      color: var(--text-black-900);
-    }
-    .about .about-content .timeline .timeline-text{
-      line-height: 25px;
-      font-size:16px;
-      text-align: justify;
-      color: var(--text-black-700);
-    }
+  
     .service .service-item{
       padding-bottom: 40px;
     }
@@ -878,7 +584,7 @@ margin-left: -200px;
     }
     /* Fly-in effect for all sections */
 .section-title, .contact-title, .contact-sub-title, .contact-info-item, 
-.form-item, .about-text, .info-items1, .skills-items, .timeline-item-about, 
+.form-item, .info-items1, .skills-items, 
 .service-item, .portfolio-item {
     opacity: 0; /* Start invisible */
     transform: translateY(50px); /* Start from below */
@@ -910,18 +616,7 @@ display: none;
   gap: 10px;
   z-index: 1000;
 }
-#about .row h6 {
-  font-size: 20px; /* Adjust font size */
-  font-weight: bold; /* Make the title bold */
-  text-transform: capitalize;
-  margin-bottom: 15px; 
-  padding-bottom: 5px; 
-  position: relative; 
-  margin-left: 35%;
-  margin-top: 20px;
-  color: var(--text-black-800);
-  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, sans-serif;
-}
+
 /* WhatsApp and Top Button Styles */
 .whatsapp-button,
 .top-button {
@@ -1054,6 +749,104 @@ display: none;
       margin-top: 10px;
       font-size: 14px;
   }
+/* start of about section */
+.about-section {
+  padding: 50px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-text {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.skills-section .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.skill-item {
+  text-align: center;
+}
+
+.progress-bar {
+  background: #f0f0f0;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  height: 10px;
+}
+
+.progress {
+  background: #007bff;
+  height: 100%;
+}
+
+.skill-percent {
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+.timeline-box {
+  margin-top: 20px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.timeline-item {
+  border-left: 3px solid #007bff;
+  padding-left: 15px;
+  position: relative;
+}
+
+.timeline-item .date {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+}
+
+.timeline-item h4 {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.timeline-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+@media (min-width: 768px) {
+  .about-details {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 50px;
+  }
+
+  .timeline-section {
+      display: flex;
+      gap: 50px;
+  }
+}
 
   /* Small screens (mobile-first design) */
   @media (max-width: 576px) {
@@ -1072,9 +865,7 @@ display: none;
       }
   }
 @media (max-width: 767px) {
-  .timeline-about {
-    grid-template-columns: 1fr; /* Single column for small screens */
-  }
+
   .button-container {
     display: flex; /* Horizontal alignment */
     justify-content: flex-end; /* Align buttons to the right */
@@ -1094,54 +885,13 @@ display: none;
     flex: 0 0 60%; /* Restrict the flex item size to 60% */
     max-width: 160%; /* Expand maximum width for large screens */
 }
-  .about .about-content {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
-    text-align: justify;
-    margin: 0;
-    padding: 0;
-    font-size: 15px;
-    line-height: 1.6;
-  }
-  .about .about-content .skills .skills-items{
-    flex: 0 0 100%;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .about .about-content .skills .skills-items .progress{
-    background-color: var(--bg-black-50);
-    height: 7px;
-    border-radius: 4px;
-    width: 100%;
-    position: relative;
-  }
-  .padd-15 {
-    width: 100%;
-    max-width: 100%;
-    padding: 0;
-    margin: 0 auto; /* Center the container like .main-container */
-    padding-left: 15px;
-    padding-right: 15px;
-    /* background-color: red; */
-}
-.about .about-content .skills {
-  flex: 0 0 100%; 
-  max-width: 100%;
-  margin-top: 20px; 
-}
 .main-container {
   width: 100%; /* Full width */
   max-width: 100%; /* Remove width restriction */
   margin: 0; /* Remove margins */
   padding: 0; /* Remove paddings */
 }
-  .timeline-box-about{
-    width: 100%;
-  }
+ 
   .floating-buttons {
     bottom: 40px;
 }
@@ -1158,25 +908,13 @@ display: none;
 
   /* Fly-in effect on scroll for small screens */
   .section-title, .contact-title, .contact-sub-title, .contact-info-item, 
-  .form-item, .about-text, .info-items1, .skills-items, .timeline-item-about, 
+  .form-item,.info-items1, .skills-items, 
   .service-item, .portfolio-item {
       opacity: 0; 
       transform: translateY(50px);
       transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
   }
-  .timeline-item-about {
-    position: relative;
-    padding: 20px; /* Balanced padding for content */
-    background-color: var(--bg-black-100);
-    border-radius: 8px; /* Smooth corners */
-    margin-top: 20px;
-    max-width: 200%;
-    width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-left: auto;
-    margin-right: auto; /* Centers the item horizontally */
-  }
+
     /* Fly-in effect when the element comes into view */
   .fly-in {
       opacity: 1; /* Fully visible when in view */
@@ -1198,10 +936,7 @@ display: none;
     left: 0;
     position: fixed;
   }
-  .education-about, .experience-about {
-    flex-basis: 100%;
-    width: 100%;
-  }
+ 
   .row .buttons {
     height: 0px;
   }
@@ -1285,9 +1020,6 @@ display: none;
     margin-left: 15px;
 }
 
-.about.section {
-  margin-top: -50vh; 
-}
 
   h3.my-profession{
     font-size: 15px;
@@ -1379,12 +1111,7 @@ display: none;
 display: none;
 
 }
-.about .about-text h3 {
-  font-size: 1.5rem;
-}
-.about .personal-info p {
-  font-size: 0.9rem;
-}
+
 .info-items {
   width: 100%;
   text-align: left;
@@ -1394,11 +1121,6 @@ display: none;
   font-size: 0.9rem;
 }
 
-.about .buttons a {
-  font-size: 0.9rem;
-  padding: 8px 12px;
-  margin-right: 5px;
-}
 
 .progress {
   height: 10px;
@@ -1543,14 +1265,6 @@ transform: translate(-50%, -50%); /* Center the menu */
     margin-left: 40vh;
   }
 
-  .about .about-content{
-    font-size: 16px;
-    line-height: 1.8; /* Improve readability */
-  }
-
-  .about .about-content .skills {
-    margin-top: 30px; /* Add spacing for better visual separation */
-  }
 
   .main-container {
     max-width: 900px; /* Restrict container width for tablet screens */
