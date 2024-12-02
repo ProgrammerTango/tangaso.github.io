@@ -104,7 +104,6 @@ body.dark {
     flex-wrap: wrap;
     position: relative;
     justify-content: space-between;
-    background-color: red;
   }
  
   .btn{
@@ -410,8 +409,15 @@ body.dark {
 .timeline-text-about {
   font-size: 16px;
   font-family: 'Georgia', 'Times New Roman', Times, serif;
+  color:var(--text-black-800);
 }
-
+.about-text, .about-text p {
+  display: block !important;
+  height: auto !important;
+  overflow: visible !important;
+  padding-bottom: 50px !important; /* Prevent clipping at the bottom */
+  font-size: 14px !important; /* Adjust font size for small screens */
+}
 
 
 /* Buttons */
@@ -1084,7 +1090,7 @@ display: none;
     flex: 0 0 60%; /* Restrict the flex item size to 60% */
     max-width: 160%; /* Expand maximum width for large screens */
 }
-  .about .about-content .about-text p {
+  .about .about-content {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -1527,7 +1533,7 @@ transform: translate(-50%, -50%); /* Center the menu */
     max-width: 140%; /* Adjust width for tablet screens */
   }
 
-  .about .about-content .about-text p {
+  .about .about-content{
     font-size: 16px;
     line-height: 1.8; /* Improve readability */
   }
