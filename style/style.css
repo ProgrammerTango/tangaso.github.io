@@ -1050,6 +1050,12 @@ display: none;
       margin-top: 10px;
       font-size: 14px;
   }
+  @media screen and (min-width: 1024px) {
+    /* Styles for screens that are at least 1024px wide */
+    body {
+        font-size: 18px; /* Example of a desktop-specific style */
+    }
+}
 
   /* Small screens (mobile-first design) */
   @media (max-width: 576px) {
