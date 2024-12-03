@@ -476,7 +476,7 @@ body.dark {
       transition: color 0.3s ease; 
       display: -webkit-box;
       -webkit-box-orient: vertical;
-      /* overflow: hidden; */
+      overflow: hidden;
       text-overflow: ellipsis;
       max-height: calc(1.5em * 4);
       transition: max-height 0.3s ease;
@@ -655,7 +655,7 @@ body.dark {
 /* service section  */
 .service-description {
   max-height: 5em; 
-  /* overflow: hidden; */
+  overflow: hidden;
   transition: max-height 0.3s ease; 
 }
 
@@ -769,7 +769,7 @@ body.dark {
     .portfolio .portfolio-item-inner{
       border: 6px solid var(--bg-black-100);
       border-radius: 10px;
-      /* overflow: hidden; */
+      overflow: hidden;
       cursor: pointer;
     }
     .portfolio .portfolio-item-inner .portfolio-img img{
@@ -952,7 +952,7 @@ display: none;
 
 .portfolio-item-inner {
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
   border-radius: 8px; /* Rounded corners */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
@@ -1260,7 +1260,7 @@ display: none;
     .progress {
         background-color: #e70101;
         border-radius: 5px;
-        /* overflow: hidden; */
+        overflow: hidden;
         height: 10px;
     }
 
@@ -1543,12 +1543,9 @@ max-width: 200px;
   .section {
     padding-top: 60px;
     padding-bottom: 70px;
-    max-width: 950px; /* Limits maximum width */
-    width: 100%; /* Adjust to full width of parent */
-    margin: 0 auto; /* Center the section */
-    overflow: visible; /* Ensure content is visible */
-}
-
+    width: 350px;
+    margin-left: 550px;
+  }
   /* Adjust styles for landscape mode on small screens */
   .home .home-info {
     flex: 0 0 80%; /* Allow more space for text */
