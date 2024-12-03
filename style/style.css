@@ -1474,9 +1474,50 @@ transform: translate(-50%, -50%); /* Center the menu */
 
 }
 
+@media (max-width: 767px) and (orientation: landscape) {
+  /* Adjust styles for landscape mode on small screens */
+  .home .home-info {
+    flex: 0 0 80%; /* Allow more space for text */
+    max-width: 100%; /* Prevent overflow */
+    background-color: red;
+  }
 
+  .home .home-img img {
+    width: 70%; /* Resize the image for landscape */
+    margin-top: 10px; /* Adjust margin for better alignment */
+    margin-left: 0;
+  }
 
+  .about .about-content {
+    font-size: 14px; /* Slightly reduce font size */
+    line-height: 1.4; /* Adjust spacing for readability */
+  }
 
+  .menu-toggle {
+    width: 100%; /* Ensure menu toggle is responsive */
+  }
+
+  .timeline-item-about {
+    padding: 15px; /* Reduce padding for tighter layout */
+    margin-top: 10px; /* Adjust margin */
+  }
+
+  .contact-info-item {
+    text-align: left; /* Align text for better usability */
+    margin: 10px 0;
+    padding: 10px;
+  }
+}
+@media (max-width: 767px) and (orientation: landscape) {
+  .main-container {
+    height: 90vh; /* Use available height */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+  }
+  
+  .home .home-img img {
+    max-height: 40vh; /* Ensure the image doesn’t dominate the screen */
+  }
+}
 
 
 
