@@ -27,7 +27,7 @@ body.dark {
     line-height: 1.5;
     font-size: 16px;
     font-family: "Poppins", sans-serif;
-
+    overflow-x: hidden;
   }
   *{
     margin: 0;
@@ -1540,12 +1540,23 @@ transform: translate(-50%, -50%); /* Center the menu */
   .aside{
 max-width: 200px;
   }
+
   .section {
-    padding-top: 60px;
-    padding-bottom: 70px;
-    width: 350px;
-    margin-left: 550px;
-  }
+    background-color: red;
+    width: 100%;
+    max-width: 100vw; /* Ensure no horizontal overflow */
+    min-height: 100vh; /* Ensure it spans the viewport height */
+    padding: 20px; /* Add some breathing room */
+    box-sizing: border-box; /* Include padding in dimensions */
+}
+
+.service.section .row {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to prevent overflow */
+    justify-content: center; /* Center align content */
+    align-items: flex-start; /* Start content from the top */
+    margin: 0 auto;
+}
   /* Adjust styles for landscape mode on small screens */
   .home .home-info {
     flex: 0 0 80%; /* Allow more space for text */
@@ -1577,6 +1588,14 @@ max-width: 200px;
     margin: 10px 0;
     padding: 10px;
   }
+  .service.section {
+    position: relative; /* Ensure it's not covered by other elements */
+    z-index: 10; /* Bring it above background layers */
+}
+.section h2, .section h4, .service-description {
+  font-size: 1.2rem;
+  line-height: 1.5; /* Improve readability */
+}
 }
 @media (max-width: 915px) and (orientation: landscape) {
   .main-container {
