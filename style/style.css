@@ -104,9 +104,9 @@ body.dark {
     position: relative;
     justify-content: space-between;
   }
-  .row > * {
-    flex: 1 1 100%; /* Full width on smaller screens */
-}
+     .row > * {
+        flex: 1 1 100%; /* Full width on smaller screens */
+    }
   .btn{
     font-size: 12px;
     font-weight: 500;
@@ -1593,10 +1593,15 @@ max-width: 200px;
 }
 
 }
-@media (max-width: 915px) and (orientation: landscape) {
+@media (max-width: 1824px) {
   .main-container {
     height: 90vh; /* Use available height */
     overflow-y: auto; /* Allow scrolling if content overflows */
+  }
+  .section{
+    margin-left: 180%;
+    display: block;
+    background-color: red;
   }
   
 
