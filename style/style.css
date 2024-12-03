@@ -103,9 +103,8 @@ body.dark {
     flex-wrap: wrap;
     position: relative;
     justify-content: space-between;
-    width: 100%;
   }
- 
+
   .btn{
     font-size: 12px;
     font-weight: 500;
@@ -1469,7 +1468,7 @@ transform: translate(-50%, -50%); /* Center the menu */
 
 }
 
-@media (max-width: 915px) and (orientation: landscape) {
+@media (max-width: 1015px) and (orientation: landscape) {
     /*aside */
     .aside .logo{
       position: absolute;
@@ -1577,13 +1576,29 @@ max-width: 200px;
     margin: 10px 0;
     padding: 10px;
   }
+  .row > * {
+    flex: 1 1 100%; /* Full width on smaller screens */
 }
-@media (max-width: 915px) and (orientation: landscape) {
-  .main-container {
-    height: 90vh; /* Use available height */
-    overflow-y: auto; /* Allow scrolling if content overflows */
-  }
-  
+  .row {
+    display: flex;
+    flex-wrap: wrap; /* Wraps content to the next line if it overflows */
+    position: relative;
+    justify-content: space-between; /* Space out children evenly */
+    width: 100%; /* Ensure `.row` stays within the container */
+    box-sizing: border-box; /* Includes padding in total width */
+    overflow: hidden; /* Prevent overflow issues */
+}
+.main-container {
+  height: 90vh; /* Use available height */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+
+}
+@media (min-width: 1020px) and (orientation: landscape) {
+  row {
+background-color: red;
+}
 
 }
 
