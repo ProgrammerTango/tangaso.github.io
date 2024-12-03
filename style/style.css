@@ -1080,7 +1080,6 @@ display: none;
     padding: 8px 16px;
     font-size: 12px;
     width: auto;
-    background-color:green;
 }
   .home .home-info {
     flex: 0 0 60%; /* Restrict the flex item size to 60% */
@@ -1597,22 +1596,12 @@ max-width: 200px;
 
 }
 @media (min-width: 1020px) and (orientation: landscape) {
-  .row {
-    display: flex;
-    flex-wrap: wrap; /* Wraps content to the next line if it overflows */
-    position: relative;
-    justify-content: space-between; /* Space out children evenly */
-    width: 100%; /* Ensure `.row` stays within the container */
-    box-sizing: border-box; /* Includes padding in total width */
-    overflow: hidden; /* Prevent overflow issues */
-}
-}
-@media (min-width: 992px) {
-  .row{
-    background-color: red;
-    margin-left: 50px;
-    width: 200%;
+  .main-container {
+    height: 90vh; /* Use available height */
+    overflow-y: auto; /* Allow scrolling if content overflows */
   }
+  
+
 }
 
 
@@ -1712,4 +1701,25 @@ display: none;
 
 
 
+/* Desktop View Styling */
+@media (min-width: 992px) {
+  .container {
+      width: 80%; /* Adjust container width for desktop */
+      max-width: 1200px; /* Limit the maximum width */
+      margin: 0 auto; /* Center the container */
+      background-color: red;
+  }
+
+  .row {
+    background-color: red;
+      display: flex;
+      justify-content: space-between; /* Space between items */
+      flex-wrap: nowrap; /* Prevent wrapping */
+  }
+
+  .row > * {
+      flex: 1 1 calc(33.33% - 20px); /* Each item takes up 33.33% */
+      margin: 10px; /* Spacing between items */
+  }
+}
 
