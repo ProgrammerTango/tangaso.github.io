@@ -104,7 +104,9 @@ body.dark {
     position: relative;
     justify-content: space-between;
   }
-
+  .row > * {
+    flex: 1 1 100%; /* Full width on smaller screens */
+}
   .btn{
     font-size: 12px;
     font-weight: 500;
@@ -1468,7 +1470,7 @@ transform: translate(-50%, -50%); /* Center the menu */
 
 }
 
-@media (max-width: 1015px) and (orientation: landscape) {
+@media (max-width: 915px) and (orientation: landscape) {
     /*aside */
     .aside .logo{
       position: absolute;
@@ -1584,13 +1586,14 @@ max-width: 200px;
     flex-wrap: wrap; /* Wraps content to the next line if it overflows */
     position: relative;
     justify-content: space-between; /* Space out children evenly */
+    background-color: red; /* Debugging aid */
     width: 100%; /* Ensure `.row` stays within the container */
     box-sizing: border-box; /* Includes padding in total width */
     overflow: hidden; /* Prevent overflow issues */
 }
 
 }
-@media (max-width: 1824px) {
+@media (max-width: 915px) and (orientation: landscape) {
   .main-container {
     height: 90vh; /* Use available height */
     overflow-y: auto; /* Allow scrolling if content overflows */
