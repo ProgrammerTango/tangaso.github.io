@@ -1588,24 +1588,16 @@ max-width: 200px;
     box-sizing: border-box; /* Includes padding in total width */
     overflow: hidden; /* Prevent overflow issues */
 }
-.main-container {
-  height: 90vh; /* Use available height */
-  overflow-y: auto; /* Allow scrolling if content overflows */
-  background-color: red;
-}
-
 
 }
 @media (max-width: 1824px) {
   .main-container {
-    background-color: red;
     height: 90vh; /* Use available height */
     overflow-y: auto; /* Allow scrolling if content overflows */
+    background-color: red;
   }
   
-.row{
-  background-color: red;
-}
+
 }
 
 
@@ -1705,25 +1697,4 @@ display: none;
 
 
 
-/* Desktop View Styling */
-@media (min-width: 992px) {
-  .container {
-      width: 80%; /* Adjust container width for desktop */
-      max-width: 1200px; /* Limit the maximum width */
-      margin: 0 auto; /* Center the container */
-      background-color: red;
-  }
-
-  .row {
-    background-color: red;
-      display: flex;
-      justify-content: space-between; /* Space between items */
-      flex-wrap: nowrap; /* Prevent wrapping */
-  }
-
-  .row > * {
-      flex: 1 1 calc(33.33% - 20px); /* Each item takes up 33.33% */
-      margin: 10px; /* Spacing between items */
-  }
-}
 
