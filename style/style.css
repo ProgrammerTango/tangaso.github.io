@@ -1469,6 +1469,43 @@ transform: translate(-50%, -50%); /* Center the menu */
 }
 
 @media (max-width: 915px) and (orientation: landscape) {
+    /*aside */
+    .aside .logo{
+      position: absolute;
+      top: 15px;
+      font-size: 20px;
+      text-transform: capitalize;
+    }
+    .aside .logo a{
+      color: var(--text-black-900);
+      font-weight: 700  ;
+      padding: 15px 20px;
+      font-size: 20px;
+      letter-spacing: 5px;
+      position: relative;
+    }
+    .aside .logo a span{
+      font-family: 'clicker script', cursive;
+    }
+    
+    .aside .logo a::before{
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-bottom: 2px solid var(--skin-color);
+      border-left: 2px solid var(--skin-color);
+      bottom: 0;
+      left: 0;
+    }
+    .aside .logo a::after{
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-top: 2px solid var(--skin-color);
+      border-right: 2px solid var(--skin-color);
+    }
     .home .home-img{
     max-width: 100vh;
     width: 10vh;
@@ -1501,13 +1538,17 @@ transform: translate(-50%, -50%); /* Center the menu */
     height: 40px;
   }
   .aside{
-max-width: 270px;
+max-width: 200px;
   }
   .section {
     padding-top: 60px;
     padding-bottom: 70px;
-    width: 100%;
-  }
+    max-width: 950px; /* Limits maximum width */
+    width: 100%; /* Adjust to full width of parent */
+    margin: 0 auto; /* Center the section */
+    overflow: visible; /* Ensure content is visible */
+}
+
   /* Adjust styles for landscape mode on small screens */
   .home .home-info {
     flex: 0 0 80%; /* Allow more space for text */
@@ -1546,9 +1587,7 @@ max-width: 270px;
     overflow-y: auto; /* Allow scrolling if content overflows */
   }
   
-  .home .home-img img {
-    max-height: 40vh; /* Ensure the image doesn’t dominate the screen */
-  }
+
 }
 
 
