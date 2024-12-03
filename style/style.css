@@ -1080,6 +1080,7 @@ display: none;
     padding: 8px 16px;
     font-size: 12px;
     width: auto;
+    background-color:green;
 }
   .home .home-info {
     flex: 0 0 60%; /* Restrict the flex item size to 60% */
@@ -1604,6 +1605,7 @@ max-width: 200px;
     width: 100%; /* Ensure `.row` stays within the container */
     box-sizing: border-box; /* Includes padding in total width */
     overflow: hidden; /* Prevent overflow issues */
+}
 }
 @media (min-width: 992px) {
   .row{
