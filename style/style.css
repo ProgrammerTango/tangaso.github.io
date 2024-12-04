@@ -51,7 +51,10 @@ body.dark {
     padding-left: 15px;
     padding-right: 15px;
   }
-
+  .main-container {
+    overflow-y: auto;
+    margin-left: -5vh;
+  }
   .section {
     /* padding-bottom: 70px; */
   }
@@ -1594,7 +1597,6 @@ max-width: 200px;
 @media (max-width: 1824px) {
   .main-container {
     overflow-y: auto;
-    margin-left: 6vh;
   }
 
   
