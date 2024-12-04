@@ -1598,8 +1598,7 @@ max-width: 200px;
   .main-container {
     overflow-y: auto;
     margin-left: 6vh;
-    background-color: red;
-    width: 60vh;
+    width: 100%;
   }
 .about{
   margin-top: -40vh;
