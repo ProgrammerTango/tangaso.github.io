@@ -1587,14 +1587,14 @@ max-width: 200px;
     flex-wrap: wrap; /* Wraps content to the next line if it overflows */
     position: relative;
     justify-content: space-between; /* Space out children evenly */
-    background-color: red; /* Debugging aid */
     width: 100%; /* Ensure `.row` stays within the container */
     box-sizing: border-box; /* Includes padding in total width */
     overflow: hidden; /* Prevent overflow issues */
 }
 }
 
-@media (min-width: 724px) and (max-width: 1024px) {
+@media (min-width: 724px) and (max-width: 1324px) {
+
   .main-container {
     overflow-y: auto;
     margin-left: 6vh;
@@ -1602,10 +1602,32 @@ max-width: 200px;
 .about{
   margin-top: -40vh;
 }
+.home-img::after {
+  right: -8vh;
+  bottom: 10px;
 
+}
+.home .home-img{
+  margin-left: 10vh;
+}
 
 }
 
+@media (min-width: 812px) and (max-width: 1368px) and (min-height: 912px) and (max-height: 1200px) and (orientation: landscape) {
+
+
+  .home .home-img{
+   margin-left: 30vh;
+
+  }
+  .home-img::after {
+   display: none;
+
+  }
+  .home-img::before {
+   display: none ;
+  }
+}
 
 
 
