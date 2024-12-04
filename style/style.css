@@ -53,7 +53,7 @@ body.dark {
   }
   .main-container {
     overflow-y: auto;
-    margin-left: -5vh;
+    margin-left: -6vh;
   }
   .section {
     /* padding-bottom: 70px; */
@@ -128,7 +128,7 @@ body.dark {
 }
   /*aside */
   .aside{
-    width: 250px;
+    width: 240px;
     background: var(--bg-black-100);
     position: fixed;
     left: 0;
@@ -1594,12 +1594,15 @@ max-width: 200px;
 }
 }
 
-@media (max-width: 1824px) {
+@media (min-width: 724px) and (max-width: 1024px) {
   .main-container {
     overflow-y: auto;
+    margin-left: 6vh;
   }
+.about{
+  margin-top: -40vh;
+}
 
-  
 
 }
 
