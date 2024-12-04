@@ -125,7 +125,7 @@ body.dark {
 }
   /*aside */
   .aside{
-    width: 270px;
+    width: 250px;
     background: var(--bg-black-100);
     position: fixed;
     left: 0;
@@ -1590,3 +1590,112 @@ max-width: 200px;
     overflow: hidden; /* Prevent overflow issues */
 }
 }
+
+@media (max-width: 1824px) {
+  .main-container {
+    overflow-y: auto;
+    margin-left: 6vh;
+  }
+
+  
+
+}
+
+
+
+
+
+
+/* Tablet-specific styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+/*   
+  .home .home-img{
+    max-width: 100vh;
+    width: 100vh;
+    margin-left: 90vh;
+    margin-top: -60%;
+  }
+  .home-img::after {
+  display: none;
+
+  }
+  .home-img::before {
+display: none;
+  }
+  .home .home-img img{
+    border-radius: 15px;
+    height: 50vh;
+  }
+
+
+  .btn-contact,
+  .btn-cv {
+    padding: 10px 20px;
+    font-size: 14px; 
+    width: auto;
+  }
+
+  .home .home-info {
+    flex: 0 0 70%; 
+    max-width: 140%;
+  }
+
+  .about .about-content{
+    font-size: 16px;
+    line-height: 1.8; 
+  }
+
+  .about .about-content .skills {
+    margin-top: 30px; 
+  }
+
+  .main-container {
+    max-width: 900px; 
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+
+  .home .home-img img {
+    width: 70%;
+    margin-top: 20vh;
+    margin-left: -20vh;
+  }
+
+  .section {
+    margin: 0 auto;
+    margin-left: 100px;
+  }
+
+  .skills .row {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px;
+  }
+
+  .menu-toggle {
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .nav-toggler {
+    top: 15px;
+    right: 15px;
+  }
+
+  .contact .contact-info-item,
+  .portfolio .portfolio-item,
+  .service .service-item {
+    flex: 0 0 48%; 
+    max-width: 48%;
+    margin: 1%;
+  }
+
+  .aside {
+    width: 33%; 
+  } */
+}
+
+
+
+
